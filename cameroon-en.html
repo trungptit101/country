@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CAMEROON EN</title>
+  <style>
+    .detail-country {
+      background: #dce4f1;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+      .top-banner__left>.text>.title {
+        font-size: 20px !important;
+      }
+
+      .top-banner__left>.text>.text-description {
+        font-size: 14px !important;
+      }
+
+      .top-banner__right>div:first-child>p {
+        font-size: 11px !important;
+      }
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .timber-transport {
+        margin-top: 15px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      /* height: 100vh; */
+      padding: 0 4%;
+    }
+
+    .top-banner {
+      height: 150px;
+      display: flex;
+    }
+
+    .top-banner__left {
+      width: 75%;
+      background: #f0c031;
+      border-bottom-left-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .top-banner__left>.text {
+      color: white;
+    }
+
+    .top-banner__left>.text>.title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .top-banner__left>.text>.text-description {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .top-banner__right {
+      width: 25%;
+      background: #6c6d70;
+      border-bottom-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px 20px 20px 20px;
+    }
+
+    .top-banner__right>div:first-child {
+      width: 50%;
+    }
+
+    .top-banner__right>div:first-child>p {
+      margin: 0;
+      color: white;
+      font-weight: 600;
+    }
+
+    .top-banner__right>div:last-child {
+      width: 50%;
+    }
+
+    .title-level-1 {
+      color: #0a78b4;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .description-level-1 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .ul-left-level-2 {
+      display: flex;
+    }
+
+    .ul-left-level-2>div:first-child {
+      width: 7%;
+    }
+
+    .title-level-2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .ul-left-level-2>div:last-child {
+      font-size: 14px;
+      width: 93%;
+    }
+
+    .timber-transport {
+      width: 100%;
+      background: #0a78b4;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 0 10px 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 15px;
+    }
+
+    .list-level-2 {
+      width: 100%;
+      background: #f49e1d;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      padding: 3px 5px 3px 15px;
+    }
+
+    .collapse_scroll {
+      display: flex !important;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .content-collapse {
+      margin-left: 10px;
+    }
+
+    .content-collapse-title {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .footer {
+      color: white;
+      background-color: #f0c031;
+      margin-top: 20px;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .footer-title {
+      font-weight: bold;
+    }
+
+    .logo-hop-tac {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+
+    .logo-hop-tac>img {
+      width: 70px;
+    }
+  </style>
+  <!-- Resources -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="detail-country">
+    <div class="content">
+      <div class="top-banner">
+        <div class="top-banner__left">
+          <div class="text">
+            <p class="title">Implementing Timber Leglity Assurance Systems</p>
+            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+              to support
+              due diligence</p>
+          </div>
+        </div>
+        <div class="top-banner__right">
+          <div>
+            <img src="./images/cameroon_v.svg" style="width: 50%;" />
+            <p>CAMEROON</p>
+          </div>
+          <div>
+            <img src="./images/map/pos_cameroon.png" style="width: 60%;" />
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p class="title-level-1">Cameroon’s Timber legality requirements</p>
+          <p class="description-level-1">Cameroon has signed a Voluntary Partnership Agreement with the European Union,
+            and the definition of legality and the tools used to ensure the legality of forestry entities are set out in
+            its Annex II. This includes eight legality matrices covering different sources of timber from permanent
+            forest domains, non-permanent forest domains or timber processing units. By being aware of legal
+            requirements in Cameroon highlighted below, law enforcement agencies and importers can implement control
+            measures to promote timber legally harvested, transported and traded. Importers and verification agencies
+            can refer to or use this definition in implementing due diligence.
+          </p>
+          <p class="title-level-1">Suggestions for developing and implementing due diligence for importers</p>
+          <div>
+            <p class="title-level-2">Due diligence and complexity</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Due diligence is the compliance of organizations and individuals with legal regulations
+                in terms of
+                tracking timber origin and proving the legality of traded timber products.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>The scope of a due diligence system depends on the number and the complexity of supply
+                chains, e.g.
+                multi-middleman and/or many organizations and individuals participating in the supply
+                chain, many timber
+                species and timber owners.</div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Developing due diligence systems</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Develop a system with leadership commitment, policies, procedures, organizational
+                structures,
+                templates/checklists and key responsible persons.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Gather information from supply chains.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Evaluate supply chains and gaps/risk assessments.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Implement risk mitigation</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Set up and store documents.</div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Implementing due diligence</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Evaluate the validity of documentation in term of date, period and authorization.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Check that each document is up to date, has been signed/stamped by the authorized
+                agencies.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Cross-check consistent and logical within itself, with other provided documents and with actual
+                products (species, volume, location of harvest, etc.) being sold/exported. </div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>The necessary measures: require further information from suppliers; conduct stakeholder consultation;
+                test timber; send staff to check timber sources; and/or hire third parties for on-site checks.</div>
+            </div>
+          </div>
+          <p style="font-size: 14px; margin-top: 10px;">The following documents are selected in accordance with
+            Cameroon’s legal definition and/or legal requirements in different stages of the supply chain.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            HARVESTING TIMBER
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_1" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Harvesting rights
+          </div>
+          <div id="collapse_1" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Professional Forest Operator Accreditation</p>
+                <p style="font-size: 12px;">Ensure the document has been signed and stamped by the Prime Minister or the
+                  Minister of Forestry and Wildlife (with the authorization of the Prime Minister). Also check that the
+                  document has a file number and an official stamp of the President of the Republic. </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Annual Harvesting Permit</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Ensure the permit has a valid date and is signed by the Minister of Forestry
+                  and Wildlife. Also check that shipments align with timber volumes and species permitted by law.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Decree granting a forest concession (for areas managed by the Forest
+                  Management Unit [FMU])</p>
+                <img src="./images/cameroon/3.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Ensure the decree has been signed and stamped by the Prime Minister, check
+                  that the name of the operator specified in the decree is the concession holder and ensure a valid
+                  concession contract is attached.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Partnership Contract</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Ensure the contract has a valid date, has been signed and stamped by the
+                  municipality representative, and includes a letter of approval signed and stamped by the Ministry of
+                  Forestry and Wildlife.</p>
+              </div>
+            </div>
+          </div>
+
+          <div data-toggle="collapse" data-target="#collapse_3" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Management plan development and approval according to official
+            procedures
+          </div>
+          <div id="collapse_3" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Forest Management Plan Approval Order
+                </p>
+                <p style="font-size: 12px;">Ensure the document has been signed and stamped by the Minister of Forestry
+                  and Wildlife and check that the timber originates from the location specified in the order.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Approval for the Environmental Impact Study (for areas
+                  managed by the FMU)</p>
+                <p style="font-size: 12px;">Check when the study was undertaken, ensure the certificate has been signed
+                  and stamped by the Minister of Environment, Nature Protection and Sustainable Development, and review
+                  any planned mitigation activities.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Records of offenses published by ministers responsible for labor,
+                  forestry and the environment</p>
+                <p style="font-size: 12px;">Check that the holder of forest rights is not included in the list of
+                  companies that have committed offenses.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_33" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Consultation with local communities and adherence to common law
+            rights
+          </div>
+          <div id="collapse_33" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">AReports on social projects
+                </p>
+                <p style="font-size: 12px;">Companies are obliged to provide reports on the implementation of social
+                  projects. </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Minutes of meetings with local communities
+                </p>
+                <p style="font-size: 12px;">The minutes of information meetings with local communities to discuss forest
+                  rights should be signed by the local administration or Prefect. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_34" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Income and profit declarations correct for the sufficient
+            payment of taxes and fees
+          </div>
+          <div id="collapse_34" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Debt Clearance
+                </p>
+                <p style="font-size: 12px;">Ensure a Certificate of Debt Clearance is authentic by entering its
+                  reference number into the website of the Directorate General of Taxes (go to
+                  https://mesure.dgi.cm:8077/ and click on the tab ‘Rechercher ANR’). If the certificate appears it is
+                  authentic.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            TRADE & TRANSPORT
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_6" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Timber has been transported under genuine documents and
+            declarations and subject to proper inspections
+          </div>
+          <div id="collapse_6" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Secure waybill for transporting logs and cut timber by road</p>
+                <p style="font-size: 12px;">Ensure the document has been stamped by the Ministry of Forestry and
+                  Wildlife, check when it was issued, and confirm that the origin, volume and species declared are
+                  consistent with the actual cargo. If logs and cut timber have been transported via rail look for a
+                  special declaration stamped by the company manager.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_66" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Full compliance with timber export procedures and checks have
+            been made
+          </div>
+          <div id="collapse_66" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Origin</p>
+                <p style="font-size: 12px;">Check the products and volumes specified are consistent with the actual
+                  shipment and ensure the certificate has been signed by the Ministry of Forestry and Wildlife.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Package specification for export</p>
+                <p style="font-size: 12px;">Check when the specification was issued and ensure the declared goods are
+                  consistent with the cargo being exported.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Export Registration</p>
+                <img src="./images/cameroon/2.png" style="width: 100%;" />
+                <p style="font-size: 12px;">Check the document has been signed and stamped by the Ministry of Forestry
+                  and Wildlife and has a valid date. Also ensure the shipment and document specifications are
+                  consistent.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Loading Certificate</p>
+                <p style="font-size: 12px;">Ensure the document has been signed and stamped by customs authorities and
+                  has a valid date.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Receipt of payment for export taxes</p>
+                <p style="font-size: 12px;">Ensure the document has a valid date and has been signed and stamped by a
+                  customs collector in the town where the payment was made. To verify the authenticity of the document
+                  it may be necessary to compare the amounts of money declared on the customs declaration form and
+                  customs duty receipt.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Records of offenses published by ministers in charge of labor,
+                  forestry and the environment</p>
+                <p style="font-size: 12px;">Check that the export company is not included in the list of companies that
+                  have committed offenses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div data-toggle="collapse" data-target="#collapse_78" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with the Convention on International Trade in
+            Endangered Species of Wild Fauna and Flora (CITES).
+          </div>
+          <div id="collapse_78" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">CITES Permit</p>
+                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">CITES permits are issued by the National CITES Management Authority of the
+                  Ministry of Forestry and Wildlife. Check the signature and seal of the CITES Management Authority, the
+                  name of the applicant / applicant's signature for the export permit, the name of the port of export.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timber-transport" style="margin-top: 20px;">
+            <img src="./images/icon-timber.png" />
+            PROCESSING
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_7" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Processing companies are legally authorized to operate in
+            Cameroon
+          </div>
+          <div id="collapse_7" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Registration</p>
+                <img src="./images/cameroon/4.png" style="width: 100%;" />
+                <p style="font-size: 12px;">Check that the document has a valid date and has been signed and stamped by
+                  the Director for the Promotion and Transformation of Forest Products. Also ensure that details
+                  included in the certificate are consistent with processing activities.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Records of offenses published by ministers in charge of labor,
+                  forestry and the environment</p>
+                <p style="font-size: 12px;">Check that the processing company is not included in the list of companies
+                  that have committed offenses.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_77" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Processors carry out environmental and social impact studies and
+            act on these studies
+          </div>
+          <div id="collapse_77" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Approval for Environmental Impact Study (for processing
+                  facility)</p>
+                <p style="font-size: 12px;">Check when the study was undertaken, ensure the certificate has been signed
+                  and stamped by the Minister of Environment, and review any planned and/or implemented mitigation
+                  activities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-cross.png" />
+            CROSS-CUTTING ISSUES
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_10" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Compliance with labor, health and safety regulations and to
+            provide worker entitlements and protections
+          </div>
+          <div id="collapse_10" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Compliance with Labor Standards</p>
+                <p style="font-size: 12px;">Certificates are granted following inspections of harvesting sites and
+                  processing sites by labor inspectors and recovery officers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-title">
+              More information on Timber Legality Requirements from Cameroon at:
+            </div>
+            <div style="font-size: 13px;">
+              <p>
+                https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project
+              </p>
+              <p>https://timberlex.apps.fao.org/</p>
+              <div class="footer-title">
+                Voluntary Partnership Agreement between the European Union and Cameroon:
+              </div>
+              <p>https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(02)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-hop-tac">
+        <img src="./images/lam-nghiep.png" />
+        <img src="./images/kiemlam.jpg" />
+        <img src="./images/hop-tac-duc.png" />
+        <img src="./images/giz.png" />
+        <img src="./images/ukaid.png" />
+      </div>
+    </div>
+    <img src="./images/background.jpg" style="width: 100%;" />
+  </div>
+</body>
+
+</html>

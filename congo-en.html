@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CONGO EN</title>
+  <style>
+    .detail-country {
+      background: #dce4f1;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+      .top-banner__left>.text>.title {
+        font-size: 20px !important;
+      }
+
+      .top-banner__left>.text>.text-description {
+        font-size: 14px !important;
+      }
+
+      .top-banner__right>div:first-child>p {
+        font-size: 11px !important;
+      }
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .timber-transport {
+        margin-top: 15px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      /* height: 100vh; */
+      padding: 0 4%;
+    }
+
+    .top-banner {
+      height: 150px;
+      display: flex;
+    }
+
+    .top-banner__left {
+      width: 75%;
+      background: #f0c031;
+      border-bottom-left-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .top-banner__left>.text {
+      color: white;
+    }
+
+    .top-banner__left>.text>.title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .top-banner__left>.text>.text-description {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .top-banner__right {
+      width: 25%;
+      background: #6c6d70;
+      border-bottom-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px 20px 20px 20px;
+    }
+
+    .top-banner__right>div:first-child {
+      width: 50%;
+    }
+
+    .top-banner__right>div:first-child>p {
+      margin: 0;
+      color: white;
+      font-weight: 600;
+    }
+
+    .top-banner__right>div:last-child {
+      width: 50%;
+    }
+
+    .title-level-1 {
+      color: #0a78b4;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .description-level-1 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .ul-left-level-2 {
+      display: flex;
+    }
+
+    .ul-left-level-2>div:first-child {
+      width: 7%;
+    }
+
+    .title-level-2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .ul-left-level-2>div:last-child {
+      font-size: 14px;
+      width: 93%;
+    }
+
+    .timber-transport {
+      width: 100%;
+      background: #0a78b4;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 0 10px 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 15px;
+    }
+
+    .list-level-2 {
+      width: 100%;
+      background: #f49e1d;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      padding: 3px 5px 3px 15px;
+    }
+
+    .collapse_scroll {
+      display: flex !important;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .content-collapse {
+      margin-left: 10px;
+    }
+
+    .content-collapse-title {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .footer {
+      color: white;
+      background-color: #f0c031;
+      margin-top: 20px;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .footer-title {
+      font-weight: bold;
+    }
+
+    .logo-hop-tac {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+
+    .logo-hop-tac>img {
+      width: 70px;
+    }
+  </style>
+  <!-- Resources -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="detail-country">
+    <div class="content">
+      <div class="top-banner">
+        <div class="top-banner__left">
+          <div class="text">
+            <p class="title">Implementing Timber Leglity Assurance Systems</p>
+            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+              to support
+              due diligence</p>
+          </div>
+        </div>
+        <div class="top-banner__right">
+          <div>
+            <img src="./images/congo_v.svg" style="width: 50%;" />
+            <p>CONGO</p>
+          </div>
+          <div>
+            <img src="./images/map/pos_congo.png" style="width: 60%;" />
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p class="title-level-1">Congo’s Timber legality requirements</p>
+          <p class="description-level-1">The Republic of Congo has signed a Voluntary Partnership Agreement with the
+            European Union. The definition of legality and the tools used to ensure the legality of organizations and
+            individuals in the forestry sector are set out in Annex II of the Agreement. It consists of two matrices: a
+            matrix for assessing the legality of timber produced in natural forests, and a matrix for assessing the
+            legality of timber from plantation forests. By being aware of the legal requirements in the Republic of
+            Congo highlighted below, law enforcement agencies and importers can implement control measures to promote
+            timber legally harvested, transported and traded. Importers and verification agencies can refer to or use
+            this definition in implementing due diligence.
+          </p>
+          <p class="title-level-1">Suggestions for developing and implementing due diligence for importers</p>
+          <div>
+            <p class="title-level-2">Due diligence and complexity</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Due diligence is the compliance of organizations and individuals with legal regulations
+                in terms of
+                tracking timber origin and proving the legality of traded timber products.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>The scope of a due diligence system depends on the number and the complexity of supply
+                chains, e.g.
+                multi-middleman and/or many organizations and individuals participating in the supply
+                chain, many timber
+                species and timber owners.</div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Developing due diligence systems</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Develop a system with leadership commitment, policies, procedures, organizational
+                structures,
+                templates/checklists and key responsible persons.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Gather information from supply chains.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Evaluate supply chains and gaps/risk assessments.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Implement risk mitigation</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Set up and store documents.</div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Implementing due diligence</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Evaluate the validity of documentation in term of date, period and authorization.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Check that each document is up to date, has been signed/stamped by the authorized
+                agencies.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Cross-check consistent and logical within itself, with other provided documents and with actual
+                products (species, volume, location of harvest, etc.) being sold/exported. </div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>The necessary measures: require further information from suppliers; conduct stakeholder consultation;
+                test timber; send staff to check timber sources; and/or hire third parties for on-site checks.</div>
+            </div>
+          </div>
+          <p style="font-size: 14px; margin-top: 10px;">The following documents are selected in accordance with Republic
+            of Congo’s legal definition and/or legal requirements in different stages of the supply chain.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            HARVESTING TIMBER
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_1" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Harvesting rights
+          </div>
+          <div id="collapse_1" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Logging and forest operations licence</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
+                <p style="font-size: 12px;">Logging and forest operations licence is signed by the Minister of Forestry
+                  Economy (Ministère de l'Economie Forestière) and is issued to forest operation and logging companies.
+                  Check the company name on the license, field of activity, sign, stamp and date appropriately.
+                  (Original document name: Certificat d’agrément en tant qu’exploitant forestier)</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Annual harvesting licence (Autorisation de coupe annuelle)</p>
+                <img src="./images/congo/1.jpg" style="width: 100%;" />
+                <img src="./images/congo/2.jpg" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/congo/3.jpg" style="width: 100%; margin-top: 5px;" />
+                <p style="font-size: 12px;">Annual harvesting licence is signed by the Director of the Provincial
+                  Forestry Economic Department under the Ministry of Forestry Economics, is issued to all license
+                  holders and concessionaires with limited timber reserves by species and harvested volume each year.
+                  Check the update of the harvesting license, the right owner of the license with the concession owner,
+                  the harvested area according to the management plan, the 5-year management program, the correct volume
+                  and species of transaction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div data-toggle="collapse" data-target="#collapse_3" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure developing and approving of management plant
+          </div>
+          <div id="collapse_3" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Approval of the concession contract (Ministerial Order)
+                </p>
+                <img src="./images/congo/6.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">The concession contract is signed and approved by the Minister of Forestry
+                  Economy for forest owners. Check this order has been published in the Official Gazette, the
+                  preferential term is 15-25 years.
+                  (Arrêté portant approbation de la Convention d’aménagement et de transformation ou Arrêté portant
+                  approbation de la Convention de transformation industrielle de l’unité forestière)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Technical specification of the concession contract (Cahier de charges
+                  particulier relatif à la Convention)</p>
+                <p style="font-size: 12px;">Technical specification of the concession contract is signed by the Minister
+                  of Forestry Economy and is issued to the companies. Check this document is signed, stamped, and
+                  obligations of the concession holder.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Minutes of the management plan validation meeting (Compte rendu de la
+                  réunion de validation du plan d’aménagement)</p>
+                <p style="font-size: 12px;">Minutes of the management plan validation meeting is signed by
+                  representatives of the Provincial Government and the Ministry of Forestry Economy. Check this document
+                  is signed and dated.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Management plan (Plan d’aménagement)</p>
+                <p style="font-size: 12px;">The management plan is kept by the Ministry of Forestry Economy and the
+                  company. Check the management plan is suitable for the approved sample, has preliminary studies
+                  (ecological, economic, social), consultation with the local community, confirmation from stakeholders.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">5-year management programme (Plan de gestion quinquennal)</p>
+                <p style="font-size: 12px;">The 5-year management programme is kept by the Ministry of Forestry Economy
+                  and the company, signed by the Inter-Ministerial Committee. Check that the program has been approved
+                  by the competent authority, its contents are consistent with the management plan (harvesting area,
+                  main activities).</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Approved environmental and social impact research report (Rapport
+                  d’étude d’impact environnemental et social) </p>
+                <p style="font-size: 12px;">Check the time of conducting the research, assure the report has been signed
+                  and stamped by the Minister of Environment, cross-check with the attached Environmental and Social
+                  Management Plan.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_33" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with customary rights, rights of indigenous
+            people
+          </div>
+          <div id="collapse_33" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">ADevelopment and Transformation Agreement (Convention d’aménagement et
+                  de transformation -CAT) or Industry Transformation Agreement (Convention de transformation
+                  industrielle - CTI)
+                </p>
+                <p style="font-size: 12px;">The Development and Transformation Agreement (CAT) or the Industrial
+                  Transformation Agreement (CTI) is approved by an order from the Ministry of Forestry Economy for the
+                  forestry unit. Check signature, seal, effective date of the agreement.</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Development plan (Plan d’Aménagement-PA)
+                </p>
+                <p style="font-size: 12px;">The development plan of a Forest Management Unit (Unités Forestières
+                  d’Aménagement-UFA) / Forest Exploitation Unit (Unités Forestières d’exploitation-UFE) is approved by a
+                  Decree. Check the information, signature, seal, effective date of the development plan.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_34" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with the Convention on International Trade in
+            Endangered Species of Wild Fauna and Flora (CITES).
+          </div>
+          <div id="collapse_34" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">CITES permit
+                </p>
+                <p style="font-size: 12px;">CITES permit is issued by the CITES Management Authority of the Ministry of
+                  Forestry Economy to loggers and exporters of timber. Check the signature and seal, the area, the type
+                  of forest on the logging permit, the quantity and specification of the harvested timber.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_35" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with tax and fee regulations
+          </div>
+          <div id="collapse_35" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Receipts for payment of direct and indirect taxes due (Quittances de
+                  paiement des impôts directs et indirects dus)
+                </p>
+                <p style="font-size: 12px;">Be sure to check taxes such as special corporate tax (Taxe spéciale sur les
+                  sociétés -TSS), corporation tax (Impôt sur les Sociétés-IS), and transferable property income tax
+                  (Impôt sur le Revenu des Valeurs Mobilières -IRVM) on tax receipts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            TRADE & TRANSPORT
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_6" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Implement full compliance with timber export inspection and
+            procedures
+          </div>
+          <div id="collapse_6" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">certificate of Conformity (l’attestation de conformité)</p>
+                <img src="./images/congo/8.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">The certificate of conformity is signed, stamped and issued by the
+                  Department of Administration and Trade to the exporter. Check signature, seal, signing date, timber
+                  species, volume, value, destination on the certificate.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of origin (Certificat d’origine)</p>
+                <p style="font-size: 12px;">Certificate of origin signed by the Provincial Consular Section and issued
+                  to the timber exporter. Check signature, seal, product category, volume/weight, port of departure,
+                  port of destination.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Certificate of Export Verification (Attestation de vérification
+                  d’export)</p>
+                <p style="font-size: 12px;">Certificate of export verification is signed by the Director of the Forest
+                  Products Export Control Agency (Service de Contrôle des Produits Forestiers à l'Exportation-SCPFE),
+                  and issued to the exporter. Check signature, seal, issued date, product type, volume correct with
+                  reality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timber-transport" style="margin-top: 20px;">
+            <img src="./images/icon-timber.png" />
+            PROCESSING
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_7" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with regulations on business registration
+          </div>
+          <div id="collapse_7" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Professional identity card (Carte d’identité professionnelle)</p>
+                <p style="font-size: 12px;">Check that the document is valid and signed and stamped by the Ministry of
+                  Forestry Economy. Also assure that the details contained in the certificate are appropriate for the
+                  processing operations.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Development and Transformation Agreement (CAT) or Industry
+                  Transformation Agreement (CTI)</p>
+                <p style="font-size: 12px;">The Development and Transformation Agreement (CAT) or the Industrial
+                  Transformation Agreement (CTI) is approved by an order from the Ministry of Forestry Economy for the
+                  forestry unit. Check signature, seal, effective date of the agreement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_77" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with environmental and social regulations
+          </div>
+          <div id="collapse_77" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Approved environmental and social impact research report </p>
+                <p style="font-size: 12px;">Check the time of conducting the research, assure the report has been signed
+                  and stamped by the Minister of Environment, cross-check with the attached Environmental and Social
+                  Management Plan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-cross.png" />
+            CROSS-CUTTING ISSUES
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_10" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Assure compliance with regulations on labor, occupational safety
+            and health
+          </div>
+          <div id="collapse_10" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Records of the establishment of the Occupational Safety and Health
+                  Committee</p>
+                <p style="font-size: 12px;">The records is in a standard Congolese templates provided by the Forestry
+                  Commission and signed by the Chairman and members of the Company's Occupational Safety and Health
+                  Committee. Check members, minutes, evidence of meetings of the Committee.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Register of employer</p>
+                <p style="font-size: 12px;">Importers can check the information of exporters and loggers on the Register
+                  of Employer about business name, address, processing and business fields.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Labor contract</p>
+                <p style="font-size: 12px;">The labor contract is drawn up by the company and signed by the employer and
+                  the employee. Check that the contract contents, information, signatures and seal are complete and
+                  accurate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-title">
+              For more information on Timber Legality Requirements from Republic of Congo:
+            </div>
+            <div style="font-size: 13px;">
+              <p>
+                https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project
+              </p>
+              <p>https://timberlex.apps.fao.org/</p>
+              <div class="footer-title">
+                Voluntary Partnership Agreement between the European Union and Republic of Congo:
+              </div>
+              <p>https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(03)&from=EN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-hop-tac">
+        <img src="./images/lam-nghiep.png" />
+        <img src="./images/kiemlam.jpg" />
+        <img src="./images/hop-tac-duc.png" />
+        <img src="./images/giz.png" />
+        <img src="./images/ukaid.png" />
+      </div>
+    </div>
+    <img src="./images/background.jpg" style="width: 100%;" />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CAMEROON VN</title>
+  <style>
+    .detail-country {
+      background: #dce4f1;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+      .top-banner__left>.text>.title {
+        font-size: 20px !important;
+      }
+
+      .top-banner__left>.text>.text-description {
+        font-size: 14px !important;
+      }
+
+      .top-banner__right>div:first-child>p {
+        font-size: 11px !important;
+      }
+
+    }
+
+    @media screen and (max-width: 600px) {
+      .timber-transport {
+        margin-top: 15px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      /* height: 100vh; */
+      padding: 0 4%;
+    }
+
+    .top-banner {
+      height: 150px;
+      display: flex;
+    }
+
+    .top-banner__left {
+      width: 75%;
+      background: #f0c031;
+      border-bottom-left-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .top-banner__left>.text {
+      color: white;
+    }
+
+    .top-banner__left>.text>.title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+
+    .top-banner__left>.text>.text-description {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .top-banner__right {
+      width: 25%;
+      background: #6c6d70;
+      border-bottom-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 30px 20px 20px 20px;
+    }
+
+    .top-banner__right>div:first-child {
+      width: 50%;
+    }
+
+    .top-banner__right>div:first-child>p {
+      margin: 0;
+      color: white;
+      font-weight: 600;
+    }
+
+    .top-banner__right>div:last-child {
+      width: 50%;
+    }
+
+    .title-level-1 {
+      color: #0a78b4;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .description-level-1 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .ul-left-level-2 {
+      display: flex;
+    }
+
+    .ul-left-level-2>div:first-child {
+      width: 7%;
+    }
+
+    .title-level-2 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .ul-left-level-2>div:last-child {
+      font-size: 14px;
+      width: 93%;
+    }
+
+    .timber-transport {
+      width: 100%;
+      background: #0a78b4;
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px 0 10px 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      padding-left: 15px;
+    }
+
+    .list-level-2 {
+      width: 100%;
+      background: #f49e1d;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+      display: flex;
+      font-size: 12px;
+      align-items: center;
+      padding: 3px 5px 3px 15px;
+    }
+
+    .collapse_scroll {
+      display: flex !important;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    .content-collapse {
+      margin-left: 10px;
+    }
+
+    .content-collapse-title {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .footer {
+      color: white;
+      background-color: #f0c031;
+      margin-top: 20px;
+      border-radius: 8px;
+      padding: 15px;
+    }
+
+    .footer-title {
+      font-weight: bold;
+    }
+
+    .logo-hop-tac {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+
+    .logo-hop-tac>img {
+      width: 70px;
+    }
+  </style>
+  <!-- Resources -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="detail-country">
+    <div class="content">
+      <div class="top-banner">
+        <div class="top-banner__left">
+          <div class="text">
+            <p class="title">Implementing Timber Leglity Assurance Systems</p>
+            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+              to support
+              due diligence</p>
+          </div>
+        </div>
+        <div class="top-banner__right">
+          <div>
+            <img src="./images/cameroon_v.svg" style="width: 50%;" />
+            <p>CAMEROON</p>
+          </div>
+          <div>
+            <img src="./images/map/pos_cameroon.png" style="width: 60%;" />
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <p class="title-level-1">Quy định gỗ hợp pháp của Cameroon</p>
+          <p class="description-level-1">Cameroon đã ký Hiệp định Đối tác Tự nguyện với Liên minh Châu u. Định nghĩa về
+            tính hợp pháp và các công cụ được sử dụng để đảm bảo tính hợp pháp của các tổ chức, cá nhân trong lĩnh vực
+            lâm nghiệp được nêu trong Phụ lục II của Hiệp định. Nó bao gồm tám ma trận về tính hợp pháp là các nguồn gỗ
+            khác nhau từ các khu vực rừng ổn định lâu dài, các khu vực rừng không ổn định lâu dài hoặc các đơn vị chế
+            biến gỗ. Bằng cách nhận thức được các yêu cầu pháp lý ở Cameroon được nêu rõ dưới đây, các cơ quan thực thi
+            pháp luật và các nhà nhập khẩu có thể thực hiện các biện pháp kiểm soát để thúc đẩy gỗ được khai thác, vận
+            chuyển và buôn bán hợp pháp từ Cameroon. Các nhà nhập khẩu và cơ quan xác minh có thể tham khảo hoặc sử dụng
+            thông tin này trong việc thực hiện trách nhiệm giải trình.
+          </p>
+          <p class="title-level-1">Gợi ý xây dựng và thực hiện trách nhiệm giải trình cho các nhà nhập khẩu</p>
+          <div>
+            <p class="title-level-2">Trách nhiệm giải trình là gì?</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Trách nhiệm giải trình là việc tổ chức, cá nhân tuân thủ các quy định pháp luật, chứng minh tính hợp
+                pháp của gỗ và khả năng truy xuất nguồn gốc gỗ được mua bán.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Phạm vi của hệ thống trách nhiệm giải trình phụ thuộc vào số lượng và mức độ phức tạp của chuỗi cung
+                ứng. Ví dụ: nhiều khâu trung gian và/ hoặc nhiều tổ chức, cá nhân tham gia chuỗi cung, nhiều loài gỗ và
+                thành phần chủ gỗ gỗ.
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Phát triển các hệ thống trách nhiệm giải trình</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Phát triển một hệ thống với cam kết của lãnh đạo, các chính sách, thủ tục, cơ cấu tổ chức, mẫu/ danh
+                sách kiểm tra và những người chịu trách nhiệm chính.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Thu thập thông tin từ các chuỗi cung ứng.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Đánh giá các chuỗi cung ứng và đánh giá lỗ hổng/ rủi ro.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Thực hiện giảm thiểu rủi ro.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Lập và lưu trữ hồ sơ.</div>
+            </div>
+          </div>
+          <div>
+            <p class="title-level-2">Thực hiện trách nhiệm giải trình</p>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Đánh giá tính hợp lệ của tài liệu về thời hạn, thời hiệu và ủy quyền.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Kiểm tra mỗi tài liệu đã được cập nhật, đã được ký/ đóng dấu bởi cơ quan đủ thẩm quyền.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Đối chiếu tính nhất quán, logic giữa tài liệu này với tài liệu khác được cung cấp và với các sản phẩm
+                thực tế (loài gỗ, khối lượng, địa điểm khai thác, v.v.) đang được bán/ xuất khẩu.</div>
+            </div>
+            <div class="ul-left-level-2">
+              <div><img src="./images/squar-blue.png" /></div>
+              <div>Các biện pháp cần thiết: yêu cầu bổ sung thông tin từ nhà cung cấp; tiến hành tham vấn các bên liên
+                quan; kiểm định gỗ; cử cán bộ nghiệm thu nguồn gỗ; và/ hoặc thuê các bên thứ ba để kiểm toán thực địa.
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 14px; margin-top: 10px;">Các tài liệu sau đây được chọn theo định nghĩa gỗ hợp pháp của
+            Cameroon và/ hoặc các quy định pháp luật trong các giai đoạn khác nhau của chuỗi cung ứng.</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            KHAI THÁC GỖ
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_1" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Quyền khai thác
+          </div>
+          <div id="collapse_1" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Công nhận doanh nghiệp chuyên nghề rừng</p>
+                <p style="font-size: 12px;">Tài liệu phải được Thủ tướng Chính phủ hoặc Bộ trưởng Bộ Lâm nghiệp và Động
+                  vật hoang dã ký tên, đóng dấu (được Thủ tướng Chính phủ ủy quyền). Ngoài ra, cần kiểm tra tài liệu có
+                  số hồ sơ và con dấu chính thức của Tổng thống nước Cộng hòa hay không. (Tên tài liệu gốc: Arrete no.
+                  portant agrément à la profession d'exploitant forestier de l'expoitation foresttiere/ Nghị định số phê
+                  duyệt nghề khai thác rừng)</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy phép khai thác hàng năm</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Giấy phép phải có ngày hợp lệ và được ký bởi Bộ trưởng Bộ Lâm nghiệp và Động
+                  vật hoang dã. Đồng thời cần kiểm tra các lô hàng có phù hợp với khối lượng và loài gỗ được luật pháp
+                  cho phép hay không. (Tên tài liệu gốc: Permis annuel d’opération/ Giấy phép khai thác hàng năm)</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Nghị định cấp nhượng quyền rừng (đối với các khu vực do Ban quản lý
+                  rừng [FMU] quản lý)</p>
+                <img src="./images/cameroon/3.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Nghị định phải được Thủ tướng Chính phủ ký và đóng dấu, cần kiểm tra tên của
+                  doanh nghiệp được chỉ định trong nghị định có phải là chủ sở hữu nhượng quyền và hợp đồng nhượng quyền
+                  hợp lệ phải được đính kèm. (Tên tài liệu gốc: Decret no portant attribution de la concession
+                  Forestiere constituée des UFA/ Nghị định liên quan đến việc giao đất nhượng quyền rừng được tạo thành
+                  từ các Đơn vị quản lý rừng)</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Hợp đồng đối tác</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Hợp đồng phải có ngày hợp lệ, đã được ký và đóng dấu bởi đại diện của thành
+                  phố, bao gồm thư chấp thuận phải do Bộ Lâm nghiệp và Động vật hoang dã ký và đóng dấu.</p>
+              </div>
+            </div>
+          </div>
+
+          <div data-toggle="collapse" data-target="#collapse_3" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Xây dựng và phê duyệt kế hoạch quản lý theo thủ tục chính thức
+          </div>
+          <div id="collapse_3" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Lệnh phê duyệt Kế hoạch Quản lý Rừng
+                </p>
+                <p style="font-size: 12px;">Tài liệu phải được Bộ trưởng Bộ Lâm nghiệp và Động vật hoang dã ký và đóng
+                  dấu, và cần kiểm tra gỗ có nguồn gốc từ địa điểm được chỉ định trong lệnh phê duyệt hay không. (Tên
+                  tài liệu gốc : Arrete no portant approbation du plan d’aménagement de la concession forestière no
+                  constituée de l’UFA/ Nghị định số. phê duyệt kế hoạch quản lý nhượng quyền rừng số do Đơn vị quản lý
+                  rừng lập).
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy chứng nhận phê duyệt nghiên cứu tác động môi trường (đối với các
+                  khu vực do Đơn vị quản lý rừng quản lý)</p>
+                <p style="font-size: 12px;">Cần kiểm tra thời điểm thực hiện nghiên cứu, chứng nhận phải được Bộ trưởng
+                  Bộ Môi trường, Bảo vệ Thiên nhiên và Phát triển Bền vững ký và đóng dấu, đồng thời xem xét mọi hoạt
+                  động giảm thiểu theo kế hoạch. (Tên tài liệu gốc: Etude d'impact environnemental du projet
+                  d'exploitation de l'UFA/ Nghiên cứu tác động môi trường của dự án do Đơn vị quản lý rừng vận hành)</p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Hồ sơ vi phạm do các bộ trưởng chịu trách nhiệm về lao động, lâm
+                  nghiệp và môi trường công bố</p>
+                <p style="font-size: 12px;">Cần kiểm tra xem chủ sở hữu quyền rừng không có trong danh sách các công ty
+                  có hành vi vi phạm hay không.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_33" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Tham vấn cộng đồng địa phương và tuân thủ các quyền luật chung
+          </div>
+          <div id="collapse_33" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Báo cáo về các dự án xã hội
+                </p>
+                <p style="font-size: 12px;">Các công ty có nghĩa vụ cung cấp báo cáo về việc thực hiện các dự án xã hội.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Biên bản cuộc họp với cộng đồng địa phương
+                </p>
+                <p style="font-size: 12px;">Biên bản các cuộc họp thông tin với cộng đồng địa phương để thảo luận về
+                  quyền rừng phải có chữ ký của chính quyền địa phương hoặc Quận trưởng.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_34" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Kê khai đúng thu nhập và lợi nhuận để nộp đủ thuế và phí
+          </div>
+          <div id="collapse_34" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy chứng nhận xóa nợ
+                </p>
+                <p style="font-size: 12px;">Giấy chứng nhận xóa nợ phải được xác thực bằng cách nhập số tham chiếu của
+                  Giấy chứng nhận đó vào trang web của Tổng cục Thuế (truy cập https://mesure.dgi.cm:8077/ và nhấp vào
+                  tab ‘Người tìm ANR’). Nếu chứng chỉ xuất hiện thì nó là xác thực.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-timber.png" />
+            THƯƠNG MẠI & VẬN TẢI
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_6" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Gỗ đã được vận chuyển theo chứng từ và tờ khai chính chủ và được
+            kiểm tra thích hợp
+          </div>
+          <div id="collapse_6" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Đảm bảo Vận đơn để vận chuyển gỗ tròn và gỗ đã cắt bằng đường bộ</p>
+                <p style="font-size: 12px;">Tài liệu phải được đóng dấu của Bộ Lâm nghiệp và Động vật hoang dã, cần kiểm
+                  tra khi nó được cấp và xác nhận rằng nguồn gốc, khối lượng và loài đã khai báo là phù hợp với hàng hóa
+                  thực tế. Nếu gỗ tròn và gỗ đã cắt đã được vận chuyển bằng đường sắt, hãy tìm một tờ khai đặc biệt có
+                  đóng dấu của người quản lý công ty. (Tên tài liệu gốc: Lettre de voiture pour le transport des bois
+                  d'oeuvre (grumes)/ Phiếu gửi vận chuyển gỗ (gỗ tròn))
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_66" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Thực hiện tuân thủ đầy đủ các thủ tục và kiểm tra xuất khẩu gỗ
+          </div>
+          <div id="collapse_66" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy chứng nhận xuất xứ</p>
+                <p style="font-size: 12px;">Cần kiểm tra các sản phẩm và khối lượng quy định có phù hợp với lô hàng thực
+                  tế hay không và giấy chứng nhận phải được Bộ Lâm nghiệp và Động vật hoang dã ký. (Tên tài liệu gốc:
+                  Certificat d’origine/ Chứng nhận xuất xứ)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Quy cách đóng gói để xuất khẩu</p>
+                <p style="font-size: 12px;">Cần kiểm tra thời điểm ban hành quy cách và hàng hóa phải được khai báo phù
+                  hợp với hàng hóa xuất khẩu. (Tên tài liệu gốc: Specification des bois debites/ Quy cách gỗ xẻ)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Đăng ký xuất khẩun</p>
+                <img src="./images/cameroon/2.png" style="width: 100%;" />
+                <p style="font-size: 12px;">Cần kiểm tra tài liệu đã được Bộ Lâm nghiệp và Động vật hoang dã ký và đóng
+                  dấu và còn hiệu lực. Đồng thời quy cách của lô hàng và tài liệu phải được nhất quán. (Tên tài liệu
+                  gốc: Domiciliation d'exportation (demande d'exportation)/ Điều chỉnh xuất khẩu (Nhu cầu xuất khẩu)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title"> Chứng nhận bốc hàng</p>
+                <p style="font-size: 12px;">Chứng từ phải được cơ quan hải quan ký tên, đóng dấu và còn hiệu lực. (Tên
+                  tài liệu gốc: Certificat d'empotage/ Chứng nhận bốc hàng)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Biên lai nộp thuế xuất khẩu</p>
+                <p style="font-size: 12px;">Chứng từ phải có ngày hợp lệ và đã được ký và đóng dấu bởi nhân viên hải
+                  quan thu thuế tại địa phương nơi thực hiện thanh toán. Để xác minh tính xác thực của chứng từ, có thể
+                  phải đối chiếu số tiền kê khai trên tờ khai hải quan và biên lai nộp thuế hải quan.
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Hồ sơ vi phạm do các bộ trưởng phụ trách lao động, lâm nghiệp và môi
+                  trường công bố</p>
+                <p style="font-size: 12px;">Cần kiểm tra công ty xuất khẩu không có trong danh sách các công ty có hành
+                  vi vi phạm.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div data-toggle="collapse" data-target="#collapse_78" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Đảm bảo tuân thủ Công ước về buôn bán quốc tế các loài động,
+            thực vật hoang dã nguy cấp (CITES)
+          </div>
+          <div id="collapse_78" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy phép CITES</p>
+                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
+                <p style="font-size: 12px;">Giấy phép CITES phải do Cơ quan quản lý CITES thuộc Bộ Bộ Lâm nghiệp và Động
+                  vật hoang dã cấp cho nhà khai thác gỗ, nhà xuất khẩu gỗ. Cần kiểm tra chữ ký và con dấu, diện tích,
+                  loại rừng trên giấy phép khai thác, số lượng và quy cách gỗ khai thác.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timber-transport" style="margin-top: 20px;">
+            <img src="./images/icon-timber.png" />
+            CHẾ BIẾN
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_7" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Các công ty chế biến được phép hoạt động hợp pháp tại Cameroon
+          </div>
+          <div id="collapse_7" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy chứng nhận đăng ký</p>
+                <img src="./images/cameroon/4.png" style="width: 100%;" />
+                <p style="font-size: 12px;">Cần kiểm tra tài liệu còn hiệu lực và đã được Cục trưởng Cục Xúc tiến và
+                  Chuyển đổi Lâm sản của Bộ Lâm nghiệp và Động vật hoang dã ký và đóng dấu. Đồng thời các chi tiết có
+                  trong chứng nhận phải phù hợp với các hoạt động chế biến. (Tên tài liệu gốc: Certificat
+                  d'enregistrement en qualite de transformateur de bois/ Giấy chứng nhận đăng ký là cơ sở chế biến gỗ)
+                </p>
+              </div>
+            </div>
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Hồ sơ vi phạm do các bộ trưởng phụ trách lao động, lâm nghiệp và môi
+                  trường công bố</p>
+                <p style="font-size: 12px;">Cần kiểm tra công ty chế biến không có trong danh sách các công ty có hành
+                  vi vi phạm.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div data-toggle="collapse" data-target="#collapse_77" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Các doanh nghiệp chế biến tiến hành các nghiên cứu về tác động
+            môi trường và xã hội và thực hiện các nghiên cứu này
+          </div>
+          <div id="collapse_77" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Giấy chứng nhận Phê duyệt Nghiên cứu Tác động Môi trường (đối với cơ
+                  sở chế biến) </p>
+                <p style="font-size: 12px;">Cần kiểm tra thời điểm thực hiện nghiên cứu, chứng nhận phải được Bộ trưởng
+                  Bộ Môi trường ký và đóng dấu, đồng thời xem xét mọi hoạt động giảm thiểu đã được lên kế hoạch và hoặc
+                  đã thực hiện.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="timber-transport">
+            <img src="./images/icon-cross.png" />
+            CÁC VẤN ĐỀ XUYÊN SUỐT
+          </div>
+          <div data-toggle="collapse" data-target="#collapse_10" class="list-level-2">
+            <img src="./images/icon-list-level-2.png" />Tuân thủ các quy định về lao động, an toàn và vệ sinh lao động
+            và cung cấp các quyền và bảo vệ cho người lao động
+          </div>
+          <div id="collapse_10" class="collapse">
+            <div class="collapse_scroll">
+              <div><img src="./images/icon-search-level-3.png" /></div>
+              <div class="content-collapse">
+                <p class="content-collapse-title">Chứng nhận Tuân thủ các Tiêu chuẩn Lao động</p>
+                <p style="font-size: 12px;">Giấy chứng nhận được cấp sau khi thanh tra lao động và cán bộ thu thuế phí
+                  kiểm tra các địa điểm khai thác và chế biến.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-title">
+              Để biết thêm thông tin về Yêu cầu pháp luật của gỗ từ Cameroon, vui lòng truy cập:
+            </div>
+            <div style="font-size: 13px;">
+              <p>
+                https://preferredbynature.org/projects/developing-background-analyses-voluntary-partnership-agreement-vpa-support-project
+              </p>
+              <p>https://timberlex.apps.fao.org/</p>
+              <div class="footer-title">
+                Hiệp định Đối tác Tự nguyện giữa Liên minh Châu u và Cameroon:
+              </div>
+              <p>https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:22011A0406(02)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-hop-tac">
+        <img src="./images/lam-nghiep.png" />
+        <img src="./images/kiemlam.jpg" />
+        <img src="./images/hop-tac-duc.png" />
+        <img src="./images/giz.png" />
+        <img src="./images/ukaid.png" />
+      </div>
+    </div>
+    <img src="./images/background.jpg" style="width: 100%;" />
+  </div>
+</body>
+
+</html>
