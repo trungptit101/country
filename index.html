@@ -10,7 +10,14 @@
 
     #chartdiv {
       width: 100%;
-      height: calc(100vh - 400px - 50px);
+      height: calc(100vh - 400px);
+    }
+
+    @media screen and (max-width: 600px) {
+      #chartdiv {
+        width: 100%;
+        height: calc(100vh - 200px) !important;
+      }
     }
 
     .carousel-inner {
@@ -22,14 +29,27 @@
       height: 100%;
     }
 
-    .top-language {
-      text-align: right;
-      margin: 10px 10px 10px 10px;
-    }
-
     .top-language>img {
       width: 40px;
       cursor: pointer;
+    }
+
+    .logo-en {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .logo-vn {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .amcharts-chart-div a {
+      display: none !important;
     }
   </style>
   <!-- Resources -->
@@ -44,8 +64,8 @@
 <body>
   <div class="home">
     <div class="top-language">
-      <img src="./images/en.png" onclick="changeLanguage('en')" />
-      <img src="./images/vi.png" onclick="changeLanguage('vi')" />
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
     </div>
     <div id="slide-home" class="carousel slide" data-ride="carousel">
       <ul class="carousel-indicators">
@@ -302,6 +322,10 @@
         legend.data.push(polygonSeries);
       });
 
+      var eles = document.querySelectorAll("[aria-labelledby$=-title]")
+      for (var i = 0; i < eles.length; i++) {
+        eles[i].style.visibility = "hidden"
+      }
     }); // end am5.ready()
   </script>
 </body>
