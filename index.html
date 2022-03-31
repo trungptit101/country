@@ -62,15 +62,33 @@
       display: none !important;
     }
 
-    .content-collapse-title {
-      width: 100%;
-      background: #f49e1d;
-      border-radius: 10px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 16px;
-      padding: 10px;
+
+
+    @media screen and (max-width: 940px) {
+      .content-collapse-title {
+        width: 100%;
+        background: #f49e1d;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+        height: 70px;
+        line-height: 70px;
+      }
+    }
+
+    @media screen and (min-width: 941px) {
+      .content-collapse-title {
+        width: 100%;
+        background: #f49e1d;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+      }
     }
   </style>
   <!-- Resources -->
