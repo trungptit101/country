@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and to support
+            <p class="text-description">A guide to comply with timber legality requirements in Nigeria and to support
               due diligence</p>
           </div>
         </div>
@@ -129,22 +139,22 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Timber harvesting permit</p>
-                <img src="./images/nigeria/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Timber harvesting permit is signed, stamped and issued by the state Forest
                   Service to loggers. Check
                   signature, seal of Director of Forestry Department, term of license, area, type of natural/planted
                   forest, quantity and specification of harvested timber.</p>
+                <img src="./images/nigeria/1.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Permit to take protected species</p>
-                <img src="./images/nigeria/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">permit to take protected species is signed and stamped by an officer of the
                   Department of Forest Use and Management, State Ministry of Natural Resources, and issued to the
                   logger. Check signature, seal, term of license, area, type of natural forest/plantation forest,
                   quantity and specification of harvested timber.</p>
+                <img src="./images/nigeria/4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -242,23 +252,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Letter of Support for Export</p>
-                <img src="./images/nigeria/5.png" style="width: 100%;" />
                 <p style="font-size: 13px;">Letter of Support for Export is signed and stamped by the Federal Minister
                   of the Environment, issued to timber operators and processors, timber exporters. Check the validity of
                   date on the letter, cross-check the owner with the harvesting permit, business registration
                   certificate, and wood processing license.
                 </p>
+                <img src="./images/nigeria/5.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Export registration certificate</p>
-                <img src="./images/nigeria/2.png" style="width: 100%;" />
                 <p style="font-size: 13px;">The export registration certificate is signed and stamped by the Director of
                   the Export Promotion Council and issued to the exporter of wood products. Check the validity of date
                   on the certificate, cross-check the owner with the business registration certificate.
                 </p>
+                <img src="./images/nigeria/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -304,7 +314,6 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Business Registration Certificate (Certificate of Incorporation)</p>
-                <div><img src="./images/nigeria/3.png" style="width: 100%;" /></div>
                 <p style="font-size: 12px;">Business registration certificate is signed by the Director General of the
                   General Department of Business Registration (Corporate Affairs Committee-CAC) and issued to
                   enterprises, including loggers and foresters. Check the information on the certificate, signature and
@@ -313,6 +322,7 @@
                   Information can be found at: <a
                     href="http://publicsearch.cac.gov.ng/comsearch/">http://publicsearch.cac.gov.ng/comsearch/</a>
                 </p>
+                <div><img src="./images/nigeria/3.png" style="width: 100%;" /></div>
               </div>
             </div>
             <div class="collapse_scroll">
@@ -375,10 +385,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and to support
+            <p class="text-description">A guide to comply with timber legality requirements in Ghana and to support
               due diligence</p>
           </div>
         </div>
@@ -126,10 +136,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Certificate of business registration</p>
-                <img src="./images/ghana/3.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Certificate of business registration is signed and stamped by the business
                   registration legal entity. Check the signature, seal of the company registrant or designee, business
                   name, registration date on the certificate.</p>
+                <img src="./images/ghana/3.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -147,10 +157,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Letter of approval for production under a Restricted Timber Species
                   License</p>
+                  <p style="font-size: 12px;">A letter of approval is signed and stamped by the Director of the Regional
+                    Department of Forest Service, issued to the owner of the felling timber, excluding salvaged logging.
+                    Check the owner's name, signature, seal, number of trees, tree location on the approval letter.</p>
                 <img src="./images/ghana/1.jpg" style="width: 100%;" />
-                <p style="font-size: 12px;">A letter of approval is signed and stamped by the Director of the Regional
-                  Department of Forest Service, issued to the owner of the felling timber, excluding salvaged logging.
-                  Check the owner's name, signature, seal, number of trees, tree location on the approval letter.</p>
               </div>
             </div>
           </div>
@@ -195,10 +205,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">CITES export Permit</p>
-                <img src="./images/ghana/5.png" style="width: 100%;" />
                 <p style="font-size: 12px;">The CITES export permit is signed, stamped and issued by the Department of
                   Wildlife under the Forestry Commission to the exporter of CITES timber species. Check the validity,
                   signature and seal, name of the timber owner on the permit.</p>
+                <img src="./images/ghana/5.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -242,12 +252,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Export permit</p>
-                <img src="./images/ghana/2.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">The export permit is signed and stamped by the Director of the Timber
                   Industries Development Division (TIDD) of the Forestry Commission, and is issued to all timber
                   exporters (by sea and by land) except for export sample shipments ( less than 1 cubic meter). Check
                   signature, seal of TIDD, date of signing, compare with name of timber owner.
                 </p>
+                <img src="./images/ghana/2.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -264,11 +274,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Certificate of registration and renewal</p>
-                <div><img src="./images/ghana/4.jpg" style="width: 100%;" /></div>
                 <p style="font-size: 12px;">The certificate of registration and renewal is signed, stamped and issued by
                   the Chief Inspector of the Department of Factory Inspectorate, Ministry of Employment and Labor
                   Relations. Check the term, signature, seal, nature of work, legal entity name on the certificate.
                 </p>
+                <div><img src="./images/ghana/4.jpg" style="width: 100%;" /></div>
               </div>
             </div>
           </div>
@@ -356,10 +366,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

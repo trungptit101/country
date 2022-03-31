@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Congo and
               to support
               due diligence</p>
           </div>
@@ -132,26 +142,26 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Logging and forest operations licence</p>
-                <img src="./images/guinea/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Logging and forest operations licence is signed by the Minister of Forestry
                   Economy (Ministère de l'Economie Forestière) and is issued to forest operation and logging companies.
                   Check the company name on the license, field of activity, sign, stamp and date appropriately.
                   (Original document name: Certificat d’agrément en tant qu’exploitant forestier)</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Annual harvesting licence (Autorisation de coupe annuelle)</p>
-                <img src="./images/congo/1.jpg" style="width: 100%;" />
-                <img src="./images/congo/2.jpg" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/congo/3.jpg" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 12px;">Annual harvesting licence is signed by the Director of the Provincial
                   Forestry Economic Department under the Ministry of Forestry Economics, is issued to all license
                   holders and concessionaires with limited timber reserves by species and harvested volume each year.
                   Check the update of the harvesting license, the right owner of the license with the concession owner,
                   the harvested area according to the management plan, the 5-year management program, the correct volume
                   and species of transaction.</p>
+                <img src="./images/congo/1.jpg" style="width: 100%;" />
+                <img src="./images/congo/2.jpg" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/congo/3.jpg" style="width: 100%; margin-top: 5px;" />
               </div>
             </div>
           </div>
@@ -165,13 +175,13 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Approval of the concession contract (Ministerial Order)
                 </p>
-                <img src="./images/congo/6.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">The concession contract is signed and approved by the Minister of Forestry
                   Economy for forest owners. Check this order has been published in the Official Gazette, the
                   preferential term is 15-25 years.
                   (Arrêté portant approbation de la Convention d’aménagement et de transformation ou Arrêté portant
                   approbation de la Convention de transformation industrielle de l’unité forestière)
                 </p>
+                <img src="./images/congo/6.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -308,11 +318,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">certificate of Conformity (l’attestation de conformité)</p>
-                <img src="./images/congo/8.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">The certificate of conformity is signed, stamped and issued by the
                   Department of Administration and Trade to the exporter. Check signature, seal, signing date, timber
                   species, volume, value, destination on the certificate.
                 </p>
+                <img src="./images/congo/8.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -449,10 +459,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

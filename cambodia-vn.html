@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Cambodia and
               to support
               due diligence</p>
           </div>
@@ -129,20 +139,20 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Hợp đồng đầu tư trồng rừng</p>
-                <img src="./images/cambodia/3.png" style="width: 100%;"/>
                 <p style="font-size: 12px;">Hợp đồng đầu tư trồng rừng áp dụng cho chủ Nhượng quyền đất kinh tế dựa trên
                   Prakas của Bộ Nông, Lâm nghiệp và Thủy sản. Hợp đồng thể hiện chủ sở hữu nhượng quyền, phân định ranh
                   giới ELC, thời hạn hiệu lực của hợp đồng thuê nhượng quyền (lên đến 50 năm).</p>
+                <img src="./images/cambodia/3.png" style="width: 100%;"/>
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Quy hoạch tổng thể dự án đầu tư rừng trồng</p>
-                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Quy hoạch tổng thể dự án đầu tư rừng trồng được Bộ trưởng Bộ Nông, Lâm
                   nghiệp và Thủy sản ký và trao cho chủ Nhượng quyền đất kinh tế (ELC).
                 </p>
+                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -255,23 +265,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép Hải quan </p>
-                <img src="./images/cambodia/5.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép Hải quan được cấp cho nhà xuất khẩu gỗ, do Tổng cục trưởng Tổng
                   cục Hải quan và Thuế tiêu thụ đặc biệt ký. Cần kiểm tra khối lượng/ số lượng, loài gỗ có khớp với
                   giấy phép hải quan; thời hạn của giấy phép hải quan còn hiệu lực không.
                 </p>
+                <img src="./images/cambodia/5.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép xuất khẩu PC/ B</p>
-                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép PC/ B (còn gọi là PC-IMEX): giấy phép vận chuyển cho phép xuất
                   khẩu gỗ và lâm sản ngoài gỗ do Bộ trưởng Bộ Thương mại và Cục trưởng Cục Quản lý Lâm nghiệp cùng ký
                   (tiểu Nghị định số 131, điều 7). Cần kiểm tra tính hợp lệ của giấy phép, khối lượng của sản phẩm gỗ,
                   điểm đến trên giấy phép phù hợp với tuyến đường vận chuyển.
                 </p>
+                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -382,10 +392,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

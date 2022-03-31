@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Cambodia and
               to support
               due diligence</p>
           </div>
@@ -133,21 +143,21 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Contract on the investment in plantation forest</p>
-                <img src="./images/cambodia/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Contract on the investment in plantation forest applies to the Prakas-based
                   Economic Land Concession of the Ministry of Agriculture, Forestry and Fisheries. The contract shows
                   the concession owner, delineates the ELC boundaries, and the duration of the concession lease
                   agreement (up to 50 years).</p>
+                <img src="./images/cambodia/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Master plan of investment project on plantation</p>
-                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">The master plan on investment in plantation forest was signed by the
                   Minister of Agriculture, Forestry and Fisheries and given to the Economic Land Concession (ELC) owner.
                 </p>
+                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -261,24 +271,24 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Customs Permit</p>
-                <img src="./images/cambodia/5.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">A Customs Permit is issued to a timber exporter, signed by the Director
                   General of the General Department of Customs and Excise. Check the volume/quantity, the timber
                   species matches the customs permit, the validity of the customs permit.
                 </p>
+                <img src="./images/cambodia/5.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Export Permit (PC-IMEX)</p>
-                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">PC/B Permit (also known as PC-IMEX): a transport permit permitting the
                   export of timber and non-timber forest products jointly signed by the Minister of Trade and the
                   Director of the Forestry Administration (sub-Decree No. 131 , the Article 7). Check the validity of
                   the permit, the volume of wood products, the destination on the permit in accordance with the
                   shipping route.
                 </p>
+                <img src="./images/cambodia/1.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -391,10 +401,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

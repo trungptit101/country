@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Guinea and
               to support
               due diligence</p>
           </div>
@@ -134,11 +144,11 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Business Registration Certificate (Certificado de registro de empresas
                   (N.I.F.))</p>
-                <img src="./images/guinea/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">A business registration certificate signed and stamped by the Ministry of
                   Finance, Economy and Planning verifies that the logging and wood processing companies meet all
                   requirements for harvesting and processing activities. Check the signature, seal, and validity date on
                   the certificate.</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -156,10 +166,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Timber Harvesting Activity Lease Agreement (Contratos de Arrendamiento
                   por Aprovechamiento Forestal - CAAF) (for national forests)</p>
-                <img src="./images/guinea/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">The Timber Harvesting Activity Lease Agreement is issued to the company
                   signed by the President. Check the information on the contract, signature and seal, validity of date,
                   documents attached to this agreement such as harvesting license, measurement certificate.</p>
+                <img src="./images/guinea/1.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -240,12 +250,12 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Export license (Licencia – Declaracion de importacion /Exportacion)
                 </p>
-                <img src="./images/guinea/2.png" style="width: 100%;" />
                 <p style="font-size: 12px;">The export license is issued to the timber processing company by the
                   Regional Representative of the Ministry of Trade and the Agency for the Promotion of Small and Medium
                   Enterprises (Delegacion regional de comercio y Promocion empresarial). Check the signature, seal,
                   validity of date, photo of the company representative on the license.
                 </p>
+                <img src="./images/guinea/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -330,10 +340,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

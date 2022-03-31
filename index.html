@@ -13,10 +13,20 @@
       height: calc(100vh - 400px);
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 940px) {
       #chartdiv {
         width: 100%;
         height: calc(100vh - 200px) !important;
+      }
+
+      .icon_legalog {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 941px) {
+      .icon_legalog {
+        width: 300px;
       }
     }
 
@@ -51,6 +61,17 @@
     .amcharts-chart-div a {
       display: none !important;
     }
+
+    .content-collapse-title {
+      width: 100%;
+      background: #f49e1d;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+    }
   </style>
   <!-- Resources -->
   <meta charset="utf-8">
@@ -67,48 +88,91 @@
       <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
       <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
     </div>
-    <div id="slide-home" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#slide-home" data-slide-to="0" class="active"></li>
-        <li data-target="#slide-home" data-slide-to="1"></li>
-        <li data-target="#slide-home" data-slide-to="2"></li>
-        <li data-target="#slide-home" data-slide-to="3"></li>
-        <li data-target="#slide-home" data-slide-to="4"></li>
-        <li data-target="#slide-home" data-slide-to="5"></li>
-        <li data-target="#slide-home" data-slide-to="6"></li>
-        <li data-target="#slide-home" data-slide-to="7"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/slide1.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide2.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide3.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide4.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide5.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide6.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/slide7.jpg" alt="Los Angeles" width="100%" height="500">
-        </div>
+    <div style="display: flex;">
+      <div style="width: 30%; text-align: center; display: flex; justify-content: center; align-items: center;">
+        <img src="./images/icon.png" class="icon_legalog" />
       </div>
-      <a class="carousel-control-prev" href="#slide-home" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#slide-home" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+      <div id="slide-home" class="carousel slide" data-ride="carousel" style="width: 70%;">
+        <ul class="carousel-indicators">
+          <li data-target="#slide-home" data-slide-to="0" class="active"></li>
+          <li data-target="#slide-home" data-slide-to="1"></li>
+          <li data-target="#slide-home" data-slide-to="2"></li>
+          <li data-target="#slide-home" data-slide-to="3"></li>
+          <li data-target="#slide-home" data-slide-to="4"></li>
+          <li data-target="#slide-home" data-slide-to="5"></li>
+          <li data-target="#slide-home" data-slide-to="6"></li>
+          <li data-target="#slide-home" data-slide-to="7"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide1.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide2.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide3.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide4.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide5.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide6.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide7.jpg" alt="Los Angeles" width="100%" height="500">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide-home" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slide-home" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
     <div id="chartdiv"></div>
+    <div style="display: flex; padding: 0 10px; margin-top: 20px;">
+      <div style="width: 49%; text-align: center;">
+        <div data-toggle="collapse" data-target="#collapse_1">
+          <p class="content-collapse-title">Bản quyền</p>
+        </div>
+        <div id="collapse_1" class="collapse">
+          <p style="font-size: 14px; text-align: justify;">Quyền sở hữu bản quyền cấp cho chủ sở hữu quyền duy nhất để
+            sử dụng tác phẩm, với
+            một số trường hợp ngoại lệ. Khi một người tạo tác phẩm gốc, cố định trong một môi trường hữu hình, họ nghiễm
+            nhiên sở hữu bản quyền đối với tác phẩm đó. Có, trong một số trường hợp, có thể sử dụng tác phẩm được bảo vệ
+            bản quyền mà không vi phạm bản quyền của chủ sở hữu. Để biết thêm về điều này, bạn có thể muốn tìm hiểu về
+            sử dụng hợp pháp. Điều quan trọng cần lưu ý là nội dung của bạn có thể bị xóa theo khiếu nại vi phạm bản
+            quyền, ngay cả khi bạn...</p>
+        </div>
+      </div>
+      <div style="width: 49%; text-align: center; margin-left: 1%;">
+        <div data-toggle="collapse" data-target="#collapse_2">
+          <p class="content-collapse-title">Tuyên bố miễn trừ trách nhiệm</p>
+        </div>
+        <div id="collapse_2" class="collapse">
+          <p style="font-size: 14px; text-align: justify;">Những thông tin đăng tải trên trang web này chỉ nhằm cung cấp
+            hướng dẫn chung về
+            các vấn đề đang được quan tâm. Việc áp dụng và ảnh hưởng của các quy định pháp luật có thể khác nhau rất lớn
+            trong những tình huống cụ thể liên quan. Do tính chất thay đổi của luật, quy tắc và quy định và những rủi ro
+            tiềm ẩn qua hình thức truyền thông bằng điện tử nên những thông tin đăng trên trang web này có thể bị trì
+            hoãn, bỏ sót hoặc thiếu chính xác. Theo đó, xin hiểu rằng tác giả và bên xuất bản các thông tin trên trang
+            web này không nhằm mục đích cung cấp nội dung tư vấn hay dịch vụ liên quan đến vấn đề pháp lý, kế toán, thuế
+            hoặc các tư vấn và dịch vụ chuyên môn khác. Do đó, quý vị không nên sử dụng những thông tin này thay cho nội
+            dung tư vấn chuyên môn từ các chuyên gia tư vấn về kế toán, thuế, pháp lý hay các chuyên gia tư vấn chuyên
+            môn khác. Trước khi đưa ra quyết định hoặc thực hiện hành động nào, quý vị nên tham vấn chuyên viên của PwC.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <img src="./images/logo-legalog.png" />
+      <p style="font-size: 18px; font-weight: 500;">Thông tin liên hệ nhà phát triển</p>
+    </div>
   </div>
 
 
@@ -152,7 +216,7 @@
         {
           "name": "Equatorial Guinea",
           "data": [
-            { "id": "GQ" },
+            { "id": "GN" },
           ]
         },
         {
@@ -282,7 +346,7 @@
               if (language == "en") window.open("./gabon-en.html");
               else window.open("./gabon-vn.html");
               break;
-            case "GQ":
+            case "GN":
               console.log("Equatorial Guinea")
               if (language == "en") window.open("./guinea-en.html");
               else window.open("./guinea-vn.html");

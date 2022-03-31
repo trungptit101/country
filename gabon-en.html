@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Gabon and
               to support
               due diligence</p>
           </div>
@@ -133,6 +143,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Agreement on development - exploitation - transformation (Convention
                   provisoire d'aménagement - exploitation - transformation)</p>
+                  <p style="font-size: 12px;">Agreement on development - exploitation - transformation is signed and
+                    stamped by the Minister of Water, Forests, Sea and Environment (Ministère des eaux, des forets, de la
+                    mer et de l'environnement) and the representative of the forestry company. Check signature, validity
+                    of seal, name and address of forestry company, concession area, term of agreement.</p>
                 <img src="./images/gabon/1.png" style="width: 100%;" />
                 <img src="./images/gabon/2.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/3.png" style="width: 100%; margin-top: 5px;" />
@@ -140,10 +154,6 @@
                 <img src="./images/gabon/5.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/6.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/7.png" style="width: 100%; margin-top: 5px;" />
-                <p style="font-size: 12px;">Agreement on development - exploitation - transformation is signed and
-                  stamped by the Minister of Water, Forests, Sea and Environment (Ministère des eaux, des forets, de la
-                  mer et de l'environnement) and the representative of the forestry company. Check signature, validity
-                  of seal, name and address of forestry company, concession area, term of agreement.</p>
               </div>
             </div>
             <div class="collapse_scroll">
@@ -322,23 +332,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Certificate of Origin (Certificat d’origine)</p>
-                <img src="./images/gabon/8.png" style="width: 100%;" />
                 <p style="font-size: 12px;">The certificate of origin is signed by the regional director of Department
                   of Customs under the CEMAC (Central African Economic and Monetary Community) and issued to the
                   forestry company. Check the place of collection / production, country of origin, shipping company,
                   recipient's address, shipment description (quantity, weight, wood species, value of goods...).
                 </p>
+                <img src="./images/gabon/8.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Transit order (Ordre de transit)</p>
-                <img src="./images/gabon/8.png" style="width: 100%;" />
                 <p style="font-size: 12px;">A transit order is signed by an export agent and issued to a forestry
                   company. Check name, address of forestry company/buyer, shipment description (quantity, weight,
                   product type).
                 </p>
+                <img src="./images/gabon/8.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -368,12 +378,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Commercial register (Immatriculation au registre du commerce)</p>
-                <div><img src="./images/gabon/9.png" style="width: 100%;" /></div>
-                <div><img src="./images/gabon/11.png" style="width: 100%; margin-top: 5px;" /></div>
-                <div><img src="./images/gabon/12.png" style="width: 100%; margin-top: 5px;" /></div>
                 <p style="font-size: 12px;">Enterprises registered in the Commercial Register. Check signature, seal,
                   registration number, type of operation, start date of operation.
                 </p>
+                <div><img src="./images/gabon/9.png" style="width: 100%;" /></div>
+                <div><img src="./images/gabon/11.png" style="width: 100%; margin-top: 5px;" /></div>
+                <div><img src="./images/gabon/12.png" style="width: 100%; margin-top: 5px;" /></div>
               </div>
             </div>
           </div>
@@ -465,10 +475,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

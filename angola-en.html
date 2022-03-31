@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Angola and
               to support
               due diligence</p>
           </div>
@@ -132,12 +142,12 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Annual forest exploitation license (Licenca de Exploração florestal)
                 </p>
-                <img src="./images/angola/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Provide verifier from the holder of the right to harvest specific timber
                   species with a certain allowable volume from a defined forest area. Cross-check information with the
                   Certificate of Origin and the Transit Permit. Carefully check the name of the License holder and the
                   province specified, and ensure the License has been signed and stamped by the Director General of the
                   Forestry Development Institute (Instituto de Desenvolvimento Florestal - IDF).</p>
+                <img src="./images/angola/1.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -266,12 +276,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">CITES Permit</p>
-                <img src="./images/angola/Angola_5.png" style="width: 100%;" />
-                <img src="./images/angola/Angola_6.png" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 12px;">CITES permits are issued by the National CITES Management Authority of the
                   Ministry of Environment. Check the signature and seal of the CITES Management Authority, the name of
                   the applicant / applicant's signature for the export permit, the name of the port of export.
                 </p>
+                <img src="./images/angola/Angola_5.png" style="width: 100%;" />
+                <img src="./images/angola/Angola_6.png" style="width: 100%; margin-top: 5px;" />
               </div>
             </div>
           </div>
@@ -290,11 +300,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Environmental Operating License (Licença Ambiental de Operação) </p>
-                <img src="./images/angola/Angola_4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">The environmental operating license is signed by the Minister of Environment
                   or an authorized person and stamped by the Ministry of Environment. Check the document, signature and
                   seal, validity of date, place of issue of the license.
                 </p>
+                <img src="./images/angola/Angola_4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -399,10 +409,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

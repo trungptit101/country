@@ -27,14 +27,37 @@
 
 }
 
+.image-logo-footer {
+  margin-left: 25px;
+}
+
 @media screen and (max-width: 600px) {
-  /* .logo-hop-tac {
-    position: absolute;
-    bottom: 50px;
-  } */
   .logo-hop-tac > img {
-    width: 40px !important;
+    width: 50px !important;
   }
+
+  .image-logo-footer {
+    margin-left: 10px !important;
+  }
+}
+
+.logo-en {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logo-vn {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-language>img {
+  width: 40px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
@@ -185,11 +208,12 @@
 }
 
 .logo-hop-tac {
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   justify-content: flex-start;
   margin-top: 30px;
 }
 
 .logo-hop-tac>img {
-  width: 70px;
+  width: 85px;
 }

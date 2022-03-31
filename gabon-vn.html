@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Gabon and
               to support
               due diligence</p>
           </div>
@@ -129,6 +139,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Thỏa thuận phát triển - khai thác – chuyển đổi tạm thời</p>
+                <p style="font-size: 12px;">Thỏa thuận phát triển - khai thác – chuyển đổi tạm thời (Convention
+                  provisoire d’aménagement - exploitation – transformation) phải do Bộ trưởng Bộ Nước, Rừng, Biển và Môi
+                  trường (Ministère des eaux, des forets, de la mer et de l'environnement) và Đại diện Công ty lâm
+                  nghiệp ký, đóng dấu. Cần kiểm tra chữ ký, con dấu hợp lệ, tên và địa chỉ công ty lâm nghiệp, diện tích
+                  nhượng quyền, thời hạn thỏa thuận. </p>
                 <img src="./images/gabon/1.png" style="width: 100%;" />
                 <img src="./images/gabon/2.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/3.png" style="width: 100%; margin-top: 5px;" />
@@ -136,11 +151,6 @@
                 <img src="./images/gabon/5.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/6.png" style="width: 100%; margin-top: 5px;" />
                 <img src="./images/gabon/7.png" style="width: 100%; margin-top: 5px;" />
-                <p style="font-size: 12px;">Thỏa thuận phát triển - khai thác – chuyển đổi tạm thời (Convention
-                  provisoire d’aménagement - exploitation – transformation) phải do Bộ trưởng Bộ Nước, Rừng, Biển và Môi
-                  trường (Ministère des eaux, des forets, de la mer et de l'environnement) và Đại diện Công ty lâm
-                  nghiệp ký, đóng dấu. Cần kiểm tra chữ ký, con dấu hợp lệ, tên và địa chỉ công ty lâm nghiệp, diện tích
-                  nhượng quyền, thời hạn thỏa thuận. </p>
               </div>
             </div>
             <div class="collapse_scroll">
@@ -308,23 +318,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận xuất xứ</p>
-                <img src="./images/gabon/8.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy chứng nhận xuất xứ phải do Cục trưởng Cục Hải quan CEMAC (Cộng đồng
                   Kinh tế và Tiền tệ Trung Phi) khu vực ký, cấp cho công ty lâm nghiệp. Cần kiểm tra nơi tập kết/ sản
                   xuất, nước xuất xứ, công ty vận chuyển, địa chỉ người nhận, mô tả lô hàng (số lượng, trọng lượng, loài
                   gỗ, giá trị hàng…).
                 </p>
+                <img src="./images/gabon/8.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Lệnh quá cảnh</p>
-                <img src="./images/gabon/8.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Lệnh quá cảnh phải do đại lý xuất khẩu ký, cấp cho công ty lâm nghiệp. Cần
                   kiểm tra tên, địa chỉ công ty lâm nghiệp/người mua, mô tả lô hàng (số lượng, trọng lượng, loại sản
                   phẩm).
                 </p>
+                <img src="./images/gabon/8.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -352,12 +362,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Sổ đăng ký thương mại</p>
-                <div><img src="./images/gabon/9.png" style="width: 100%;" /></div>
-                <div><img src="./images/gabon/11.png" style="width: 100%; margin-top: 5px;" /></div>
-                <div><img src="./images/gabon/12.png" style="width: 100%; margin-top: 5px;" /></div>
                 <p style="font-size: 12px;">Doanh nghiệp đăng ký vào Sổ đăng ký thương mại. Cần kiểm tra chữ ký, con
                   dấu, số đăng ký, loại hình hoạt động, ngày bắt đầu hoạt động.
                 </p>
+                <div><img src="./images/gabon/9.png" style="width: 100%;" /></div>
+                <div><img src="./images/gabon/11.png" style="width: 100%; margin-top: 5px;" /></div>
+                <div><img src="./images/gabon/12.png" style="width: 100%; margin-top: 5px;" /></div>
               </div>
             </div>
           </div>
@@ -445,10 +455,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

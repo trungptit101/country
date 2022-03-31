@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and to support
+            <p class="text-description">A guide to comply with timber legality requirements in Ghana and to support
               due diligence</p>
           </div>
         </div>
@@ -127,10 +137,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký kinh doanh</p>
-                <img src="./images/ghana/3.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy chứng nhận đăng ký kinh doanh do pháp nhân đăng ký kinh doanh ký, đóng
                   dấu. Cần kiểm tra chữ ký, con dấu của người đăng ký công ty hoặc người được chỉ định, tên doanh
                   nghiệp, ngày đăng ký trên giấy chứng nhận.</p>
+                <img src="./images/ghana/3.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -146,10 +156,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Thư phê duyệt sản lượng theo Giấy phép loài gỗ hạn chế</p>
-                <img src="./images/ghana/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Thư phê duyệt phải do Cục trưởng Cục Dịch vụ Lâm nghiệp khu vực ký, đóng dấu
                   cấp cho chủ sở hữu chặt hạ gỗ, trừ khai thác gỗ trục vớt. Cần kiểm tra tên chủ sở hữu, chữ ký, con
                   dấu, số lượng thân cây, vị trí cây trên thư phê duyệt.</p>
+                <img src="./images/ghana/1.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -193,10 +203,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép xuất khẩu CITES</p>
-                <img src="./images/ghana/5.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép xuất khẩu CITES phải do Cục Động thực vật hoang dã thuộc Ủy ban
                   Lâm nghiệp ký, đóng dấu, cấp cho nhà xuất khẩu các loài gỗ CITES. Cần kiểm tra tính hợp lệ, chữ ký và
                   con dấu, tên của chủ gỗ trên giấy phép.</p>
+                <img src="./images/ghana/5.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -238,12 +248,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép xuất khẩu</p>
-                <img src="./images/ghana/2.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép xuất khẩu phải do Cục trưởng Cục Phát triển Công nghiệp Gỗ (TIDD)
                   thuộc Ủy ban Lâm nghiệp ký và đóng dấu, cấp cho tất cả các nhà xuất khẩu gỗ (đường biển và đường bộ)
                   trừ các lô hàng mẫu xuất khẩu (nhỏ hơn 1 mét khối). Cần kiểm tra chữ ký, con dấu của TIDD, ngày ký,
                   cần đối chiếu với tên của chủ gỗ.
                 </p>
+                <img src="./images/ghana/2.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -260,12 +270,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký và gia hạn</p>
-                <div><img src="./images/ghana/4.jpg" style="width: 100%;" /></div>
                 <p style="font-size: 12px;">Giấy chứng nhận đăng ký và gia hạn phải do Chánh Thanh tra Cục Thanh tra Nhà
                   máy, Bộ Việc làm và Quan hệ lao động ký, đóng dấu, cấp cho các nhà máy, cơ sở chế biến gỗ, văn phòng,
                   cửa hàng. Cần kiểm tra thời hạn, chữ ký, con dấu, bản chất công việc, tên pháp nhân trên giấy chứng
                   nhận.
                 </p>
+                <div><img src="./images/ghana/4.jpg" style="width: 100%;" /></div>
               </div>
             </div>
           </div>
@@ -351,10 +361,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

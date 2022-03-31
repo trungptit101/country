@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Congo and
               to support
               due diligence</p>
           </div>
@@ -129,26 +139,26 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép quản lý rừng và khai thác gỗ</p>
-                <img src="./images/guinea/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép quản lý rừng và khai thác gỗ phải do Bộ trưởng Bộ Kinh tế lâm
                   nghiệp (Ministère de l'Economie Forestière) ký, cấp cho các công ty quản lý rừng và khai thác gỗ. Cần
                   kiểm tra tên công ty trên giấy phép, lĩnh vực hoạt động, ký tên, đóng dấu và ghi ngày tháng phù hợp.
                   (Tên tài liệu gốc: Certificat d’agrément en tant qu’exploitant forestier/ Giấy phép quản lý rừng và
                   khai thác gỗ)</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác hàng năm</p>
-                <img src="./images/congo/1.jpg" style="width: 100%;" />
-                <img src="./images/congo/2.jpg" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/congo/3.jpg" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 12px;">Giấy phép khai thác hàng năm phải do Cục trưởng Cục Kinh tế Lâm nghiệp tỉnh
                   thuộc Bộ Kinh tế lâm nghiệp ký, cấp cho tất cả các chủ sở hữu giấy phép và nhượng quyền khai thác giới
                   hạn trữ lượng gỗ theo loài và lượng khai thác cho phép hàng năm. Cần kiểm tra cập nhật giấy phép khai
                   thác, chủ sở hữu giấy phép đúng với chủ sở hữu nhượng quyền, diện tích khai thác theo kế hoạch quản
                   lý, chương trình quản lý 5 năm, đúng khối lượng và loài giao dịch.</p>
+                <img src="./images/congo/1.jpg" style="width: 100%;" />
+                <img src="./images/congo/2.jpg" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/congo/3.jpg" style="width: 100%; margin-top: 5px;" />
               </div>
             </div>
           </div>
@@ -162,10 +172,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Phê duyệt hợp đồng nhượng quyền (Lệnh của Bộ trưởng)
                 </p>
-                <img src="./images/congo/6.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Hợp đồng nhượng quyền được Bộ trưởng Bộ Kinh tế lâm nghiệp ký phê duyệt cho
                   các chủ rừng. Cần kiểm tra lệnh này đã được đăng công báo, thời hạn ưu đãi 15-25 năm.
                 </p>
+                <img src="./images/congo/6.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -292,11 +302,11 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận hợp quy
                 </p>
-                <img src="./images/congo/8.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy chứng nhận hợp quy phải do Sở Hành chính và Thương mại ký, đóng dấu,
                   cấp cho nhà xuất khẩu. Cần Kiểm tra chữ ký, con dấu, ngày ký, loài gỗ, khối lượng, giá trị, điểm đến
                   trên giấy chứng nhận.
                 </p>
+                <img src="./images/congo/8.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -429,10 +439,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

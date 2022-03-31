@@ -14,10 +14,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
@@ -140,10 +150,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác hàng năm</p>
-                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép phải có ngày hợp lệ và được ký bởi Bộ trưởng Bộ Lâm nghiệp và Động
                   vật hoang dã. Đồng thời cần kiểm tra các lô hàng có phù hợp với khối lượng và loài gỗ được luật pháp
                   cho phép hay không. (Tên tài liệu gốc: Permis annuel d’opération/ Giấy phép khai thác hàng năm)</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -151,21 +161,21 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Nghị định cấp nhượng quyền rừng (đối với các khu vực do Ban quản lý
                   rừng [FMU] quản lý)</p>
+                  <p style="font-size: 12px;">Nghị định phải được Thủ tướng Chính phủ ký và đóng dấu, cần kiểm tra tên của
+                    doanh nghiệp được chỉ định trong nghị định có phải là chủ sở hữu nhượng quyền và hợp đồng nhượng quyền
+                    hợp lệ phải được đính kèm. (Tên tài liệu gốc: Decret no portant attribution de la concession
+                    Forestiere constituée des UFA/ Nghị định liên quan đến việc giao đất nhượng quyền rừng được tạo thành
+                    từ các Đơn vị quản lý rừng)</p>
                 <img src="./images/cameroon/3.jpg" style="width: 100%;" />
-                <p style="font-size: 12px;">Nghị định phải được Thủ tướng Chính phủ ký và đóng dấu, cần kiểm tra tên của
-                  doanh nghiệp được chỉ định trong nghị định có phải là chủ sở hữu nhượng quyền và hợp đồng nhượng quyền
-                  hợp lệ phải được đính kèm. (Tên tài liệu gốc: Decret no portant attribution de la concession
-                  Forestiere constituée des UFA/ Nghị định liên quan đến việc giao đất nhượng quyền rừng được tạo thành
-                  từ các Đơn vị quản lý rừng)</p>
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Hợp đồng đối tác</p>
-                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Hợp đồng phải có ngày hợp lệ, đã được ký và đóng dấu bởi đại diện của thành
                   phố, bao gồm thư chấp thuận phải do Bộ Lâm nghiệp và Động vật hoang dã ký và đóng dấu.</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -305,11 +315,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Đăng ký xuất khẩun</p>
-                <img src="./images/cameroon/2.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Cần kiểm tra tài liệu đã được Bộ Lâm nghiệp và Động vật hoang dã ký và đóng
                   dấu và còn hiệu lực. Đồng thời quy cách của lô hàng và tài liệu phải được nhất quán. (Tên tài liệu
                   gốc: Domiciliation d'exportation (demande d'exportation)/ Điều chỉnh xuất khẩu (Nhu cầu xuất khẩu)
                 </p>
+                <img src="./images/cameroon/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -352,11 +362,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép CITES</p>
-                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép CITES phải do Cơ quan quản lý CITES thuộc Bộ Bộ Lâm nghiệp và Động
                   vật hoang dã cấp cho nhà khai thác gỗ, nhà xuất khẩu gỗ. Cần kiểm tra chữ ký và con dấu, diện tích,
                   loại rừng trên giấy phép khai thác, số lượng và quy cách gỗ khai thác.
                 </p>
+                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -373,12 +383,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký</p>
-                <img src="./images/cameroon/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Cần kiểm tra tài liệu còn hiệu lực và đã được Cục trưởng Cục Xúc tiến và
                   Chuyển đổi Lâm sản của Bộ Lâm nghiệp và Động vật hoang dã ký và đóng dấu. Đồng thời các chi tiết có
                   trong chứng nhận phải phù hợp với các hoạt động chế biến. (Tên tài liệu gốc: Certificat
                   d'enregistrement en qualite de transformateur de bois/ Giấy chứng nhận đăng ký là cơ sở chế biến gỗ)
                 </p>
+                <img src="./images/cameroon/4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -453,10 +463,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

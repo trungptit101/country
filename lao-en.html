@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Laos and
               to support
               due diligence</p>
           </div>
@@ -137,23 +147,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Harvesting permit</p>
-                <img src="./images/laos/1.JPG" style="width: 100%;" />
-                <img src="./images/laos/2.JPG" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/laos/3.jpg" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 12px;">The harvesting permit is signed by the Head of the Provincial Agriculture
                   and Forestry Office (PAFO) and issued to the loggers. Check signatures, seals, compare annual
                   harvesting quotas, species of trees, harvesting volume.</p>
+                <img src="./images/laos/1.JPG" style="width: 100%;" />
+                <img src="./images/laos/2.JPG" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/laos/3.jpg" style="width: 100%; margin-top: 5px;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Notification from Government for conversion</p>
-                <img src="./images/nigeria/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Notification from Government for conversion is signed by the Prime Minister
                   or the Minister-Chairman of the Prime Minister's Office and assigned to the Minister of Finance, the
                   Ministry of Natural Resources and Environment and the Governor of the Province. Check signatures,
                   seals and date of signature, cross-check the area, species of wood and volume of harvesting.</p>
+                <img src="./images/nigeria/4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -244,12 +254,12 @@
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
-                <img src="./images/laos/10.JPG" style="width: 100%;" />
                 <p class="content-collapse-title">CITES Permit</p>
                 <p style="font-size: 12px;">The CITES permit is signed and stamped by the CITES Management Authority
                   of the Ministry of Agriculture and Forestry, and issued to the exporter of CITES timber species.
                   Check the validity, signature and seal, name of the timber owner, species and volume on the permit.
                 </p>
+                <img src="./images/laos/10.JPG" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -261,32 +271,32 @@
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
-                <img src="./images/laos/10.JPG" style="width: 100%;" />
                 <p class="content-collapse-title">Invoice for of royalty payment</p>
                 <p style="font-size: 12px;">Invoice for of royalty payment is signed by Head of Public Property
                   Management Department. Cross-check the log list, check the signature, valid signing date.
                 </p>
+                <img src="./images/laos/10.JPG" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
-                <img src="./images/laos/10.JPG" style="width: 100%;" />
                 <p class="content-collapse-title">Annual tax payment certificate</p>
                 <p style="font-size: 12px;">Annual tax payment certificate is signed by the Director of the Provincial
                   Tax Department. Check that the company name and address, signature and seal are valid.
                 </p>
+                <img src="./images/laos/10.JPG" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
-                <img src="./images/laos/10.JPG" style="width: 100%;" />
                 <p class="content-collapse-title">Money transfer receipt to the provincial treasury</p>
                 <p style="font-size: 12px;">Money transfer receipt to the provincial treasury is signed by the staff
                   of the Provincial Treasury, the Provincial Department of Finance and the recipient. Cross-check the
                   log list with the source, species and volume, signature and seal on the receipt.
                 </p>
+                <img src="./images/laos/10.JPG" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -324,16 +334,16 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Export certificate for wood product</p>
-                <img src="./images/laos/4.JPG" style="width: 100%;" />
-                <img src="./images/laos/5.JPG" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/laos/6.JPG" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/laos/7.JPG" style="width: 100%; margin-top: 5px;" />
-                <img src="./images/laos/9.JPG" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 13px;">Export certificate for wood product is signed by the business owner, and a
                   committee consisting of the Department of Industry and Trade (POIC), the Department of Agriculture and
                   Forestry, and the Department of Finance. Check signature, seal, company name and address, cross-check
                   volume, validity of unit.
                 </p>
+                <img src="./images/laos/4.JPG" style="width: 100%;" />
+                <img src="./images/laos/5.JPG" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/laos/6.JPG" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/laos/7.JPG" style="width: 100%; margin-top: 5px;" />
+                <img src="./images/laos/9.JPG" style="width: 100%; margin-top: 5px;" />
               </div>
             </div>
           </div>
@@ -350,12 +360,12 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Enterprise registration certificate</p>
-                <img src="./images/laos/8.JPG" style="width: 100%;" />
                 <p style="font-size: 12px;">Enterprise registration certificate is signed by the Business Registration
                   Authority (Ministry of Industry and Trade, or Provincial Department of Industry and Trade or District
                   Chamber of Industry and Trade). Check the validity of date, signatures and seals of lawful
                   authorities.
                 </p>
+                <img src="./images/laos/8.JPG" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -426,10 +436,10 @@
     </div>
     <div class="logo-hop-tac">
       <img src="./images/lam-nghiep.png" />
-      <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-      <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-      <img src="./images/giz.png" style="margin-left: 10px;" />
-      <img src="./images/ukaid.png" style="margin-left: 10px;" />
+      <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+      <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+      <img src="./images/giz.png"  class="image-logo-footer" />
+      <img src="./images/ukaid.png"  class="image-logo-footer" />
     </div>
   </div>
   <img src="./images/background.jpg" style="width: 100%;" />

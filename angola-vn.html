@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Angola and
               to support
               due diligence</p>
           </div>
@@ -129,12 +139,12 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác rừng hàng năm (Licenca de Exploração florestal)
                 </p>
-                <img src="./images/angola/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Bằng chứng từ người có quyền khai thác các loại gỗ cụ thể, với khối lượng
                   cho phép nhất định từ diện tích rừng xác định. Đối chiếu thông tin với Giấy chứng nhận xuất xứ và Giấy
                   phép quá cảnh. Cần kiểm tra kỹ tên chủ Giấy phép và tỉnh được chỉ định, và đảm bảo Giấy phép đã được
                   ký và đóng dấu của Tổng Giám đốc Viện Phát triển Lâm nghiệp ((Instituto de Desenvolvimento Florestal -
                   IDF).</p>
+                <img src="./images/angola/1.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -259,11 +269,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép CITES</p>
-                <img src="./images/angola/Angola_5.png" style="width: 100%;" />
-                <img src="./images/angola/Angola_6.png" style="width: 100%; margin-top: 5px;" />
                 <p style="font-size: 12px;">Giấy phép CITES phải do Cơ quan quản lý CITES quốc gia của Bộ Môi trường
                   cấp. Cần kiểm tra chữ ký và dấu của Cơ quan CITES, tên chữ ký người nộp đơn/ người xin giấy phép xuất
                   khẩu, tên cảng xuất khẩu.
+                <img src="./images/angola/Angola_5.png" style="width: 100%;" />
+                <img src="./images/angola/Angola_6.png" style="width: 100%; margin-top: 5px;" />
                 </p>
               </div>
             </div>
@@ -283,11 +293,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép môi trường vận hành</p>
-                <img src="./images/angola/Angola_4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép môi trường vận hành phải do Bộ trưởng Bộ Môi trường hoặc người
                   được ủy quyền ký và đóng dấu của Bộ Môi trường. Cần kiểm tra tài liệu, chữ ký và con dấu, thời hạn
                   hiệu lực, nơi phát hành của giấy phép.
                 </p>
+                <img src="./images/angola/Angola_4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -392,10 +402,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

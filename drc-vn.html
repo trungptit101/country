@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Drc and
               to support
               due diligence</p>
           </div>
@@ -130,11 +140,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Hợp đồng nhượng quyền rừng</p>
-                <img src="./images/guinea/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Hợp đồng nhượng quyền rừng phải do Bộ trưởng Bộ Môi trường và phát triển bền
                   vững và đại diện Công ty nhận nhượng quyền rừng có diện tích trên 300.000 ha ký và đóng dấu. Cần kiểm
                   tra chữ ký, con dấu của Bộ Môi trường và Phát triển bền vững và công ty nhận nhường quyền, tên doanh
                   nghiệp, thời hạn hiệu lực trên hợp đồng.</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -150,10 +160,10 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác công nghiệp</p>
-                <img src="./images/drc/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép khai thác công nghiệp áp dụng cho khu vực khai thác hàng năm phải
                   do Bộ trưởng Bộ Môi trường và phát triển bền vững ký, đóng dấu. Cần kiểm tra ngày ký, chữ ký, con dấu
                   của Bộ trưởng, tên chủ sở hữu nhượng quyền, diện tích, khối lượng và loài khai thác.</p>
+                <img src="./images/drc/1.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -246,10 +256,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép CITES
                 </p>
-                <img src="./images/drc/5.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép CITES phải do Bộ Môi trường và phát triển bền vững ký, đóng dấu,
                   cấp cho nhà xuất khẩu các loài gỗ CITES. Cần kiểm tra tính hợp lệ, chữ ký và con dấu, tên của chủ gỗ,
                   loài và khối lượng trên giấy phép.</p>
+                <img src="./images/drc/5.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -305,11 +315,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận xác minh vận đơn và xuất khẩu</p>
-                <img src="./images/drc/2.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy chứng nhận xác minh vận đơn và xuất khẩu phải do Văn phòng Kiểm soát
                   ký, đóng dấu cấp cho nhà xuất khẩu gỗ. Cần kiểm tra chữ ký, con dấu của Văn phòng Kiểm soát, ngày ký,
                   cần đối chiếu loại sản phẩm, khối lượng với thực tế xuất khẩu.
                 </p>
+                <img src="./images/drc/2.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -336,11 +346,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Xác nhận đăng ký hợp pháp tại Tòa án Thương mại</p>
-                <img src="./images/drc/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Văn bản xác nhận phải do Tòa Thương mại ký, đóng dấu cấp cho các công ty gỗ.
                   Cần kiểm tra thời hạn, chữ ký, con dấu của Tòa Thương mại, cần đối chiếu số đăng ký, mục đích và hoạt
                   động với các giấy tờ khác.
                 </p>
+                <img src="./images/drc/3.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -354,11 +364,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Chứng nhận môi trường</p>
-                <img src="./images/drc/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Chứng nhận môi trường phải do Cục trưởng Cục Môi trường ký cấp cho công ty
                   lâm nghiệp. Cần kiểm tra thời gian hiệu lực, chữ ký và con dấu, diện tích rừng trên chứng nhận môi
                   trường.
                 </p>
+                <img src="./images/drc/4.png" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -410,10 +420,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

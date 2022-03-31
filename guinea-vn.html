@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and
+            <p class="text-description">A guide to comply with timber legality requirements in Guinea and
               to support
               due diligence</p>
           </div>
@@ -129,11 +139,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký kinh doanh</p>
-                <img src="./images/guinea/3.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy chứng nhận đăng ký kinh doanh phải do Bộ Tài chính, Kinh tế và Kế hoạch
                   ký và đóng dấu xác minh công ty khai thác và chế biến gỗ đáp ứng tất cả các yêu cầu về hoạt động khai
                   thác, chế biến. Cần kiểm tra chữ ký, con dấu, ngày hiệu lực trên giấy chứng nhận. (Tên tài liệu gốc:
                   Certificado de registro de empresas (N.I.F.)/ Giấy chứng nhận đăng ký kinh doanh (Mã số thuế)).</p>
+                <img src="./images/guinea/3.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -151,10 +161,10 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Thỏa thuận cho thuê rừng (Contratos de Arrendamiento por
                   Aprovechamiento Forestal - CAAF) (đối với rừng quốc gia)</p>
+                  <p style="font-size: 12px;">Thỏa thuận cho thuê hoạt động khai thác gỗ được cấp cho công ty phải do Tổng
+                    thống ký. Cần kiểm tra các thông tin trên hợp đồng, chữ ký và con dấu, ngày hiệu lực, các hồ sơ kèm
+                    theo thỏa thuận này như giấy phép khai thác, chứng chỉ đo đạc.</p>
                 <img src="./images/guinea/1.png" style="width: 100%;" />
-                <p style="font-size: 12px;">Thỏa thuận cho thuê hoạt động khai thác gỗ được cấp cho công ty phải do Tổng
-                  thống ký. Cần kiểm tra các thông tin trên hợp đồng, chữ ký và con dấu, ngày hiệu lực, các hồ sơ kèm
-                  theo thỏa thuận này như giấy phép khai thác, chứng chỉ đo đạc.</p>
               </div>
             </div>
             <div class="collapse_scroll">
@@ -235,13 +245,13 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép xuất khẩu
                 </p>
-                <img src="./images/guinea/2.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép xuất khẩu được cấp cho công ty chế biến gỗ phải do Đại diện khu
                   vực của Bộ Thương mại và Cơ quan Xúc tiến Doanh nghiệp vừa và nhỏ (Delegacion regional de comercio y
                   Promocion empresarial) ký. Cần kiểm tra chữ ký, con dấu, ngày hiệu lực, ảnh của người đại diện công ty
                   trên giấy phép. (Tên tài liệu gốc: Licencia – Declaracion de importacion /Exportacion/ Giấy phép – Tờ
                   khai xuất/ nhập khẩu).
                 </p>
+                <img src="./images/guinea/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -326,10 +336,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

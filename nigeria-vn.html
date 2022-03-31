@@ -14,16 +14,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
           <div class="text">
             <p class="title">Implementing Timber Leglity Assurance Systems</p>
-            <p class="text-description">A guide to comply with timber legality requirements in Cameroon and to support
+            <p class="text-description">A guide to comply with timber legality requirements in Nigeria and to support
               due diligence</p>
           </div>
         </div>
@@ -128,21 +138,21 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác gỗ</p>
-                <img src="./images/nigeria/1.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép khai thác gỗ cấp cho nhà khai thác gỗ phải do Cục Lâm nghiệp tiểu
                   bang ký và đóng dấu. Kiểm tra chữ ký, con dấu của Cục trưởng Cục Lâm nghiệp, thời hạn giấy phép, diện
                   tích, loại rừng tự nhiên/ rừng trồng, số lượng, quy cách gỗ được khai thác. </p>
+                <img src="./images/nigeria/1.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy phép khai thác các loài gỗ được bảo vệ</p>
-                <img src="./images/nigeria/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Giấy phép nhận các loài gỗ được bảo vệ phải do cán bộ của Cục Quản lý và sử
                   dụng rừng, Bộ Tài nguyên thiên nhiên tiểu bang ký và đóng dấu, cấp cho nhà khai thác gỗ. Cần kiểm tra
                   chữ ký, con dấu, thời hạn giấy phép, diện tích, loại rừng tự nhiên/ rừng trồng, số lượng, quy cách gỗ
                   được khai thác.</p>
+                <img src="./images/nigeria/4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -235,23 +245,23 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Thư hỗ trợ xuất khẩu</p>
-                <img src="./images/nigeria/5.png" style="width: 100%;" />
                 <p style="font-size: 13px;">Thư hỗ trợ xuất khẩu phải do Bộ trưởng Bộ Môi trường Liên bang ký và đóng
                   dấu cấp cho nhà khai thác và chế biến gỗ, nhà xuất khẩu gỗ. Cần kiểm tra ngày hiệu lực trên thư; cần
                   đối chiếu chủ sở hữu với giấy phép khai thác, giấy chứng nhận đăng ký kinh doanh, giấy phép chế biến
                   gỗ.
                 </p>
+                <img src="./images/nigeria/5.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký xuất khẩu</p>
-                <img src="./images/nigeria/2.png" style="width: 100%;" />
                 <p style="font-size: 13px;">Giấy chứng nhận đăng ký xuất khẩu phải do Giám đốc Hội đồng Xúc tiến xuất
                   khẩu ký và đóng dấu, cấp cho nhà xuất khẩu sản phẩm gỗ. Cần kiểm tra ngày hiệu lực trên giấy chứng
                   nhận; cần đối chiếu chủ sở hữu với giấy chứng nhận đăng ký kinh doanh.
                 </p>
+                <img src="./images/nigeria/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -297,7 +307,6 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Giấy chứng nhận đăng ký kinh doanh (giấy chứng nhận thành lập) </p>
-                <div><img src="./images/nigeria/3.png" style="width: 100%;" /></div>
                 <p style="font-size: 12px;">Giấy chứng nhận đăng ký kinh doanh phải do Tổng cục trưởng Tổng cục đăng ký
                   doanh nghiệp (Ủy ban các vấn đề doanh nghiệp-CAC)ký, cấp cho doanh nghiệp, bao gồm người khai thác gỗ,
                   người khai thác rừng. Cần kiểm tra thông tin trên giấy chứng nhận, chữ ký và con dấu, đối chiếu với
@@ -305,6 +314,7 @@
                   Có thể tham khảo thông tin tại:
                   <a href="http://publicsearch.cac.gov.ng/comsearch/">http://publicsearch.cac.gov.ng/comsearch/</a>
                 </p>
+                <div><img src="./images/nigeria/3.png" style="width: 100%;" /></div>
               </div>
             </div>
             <div class="collapse_scroll">
@@ -364,19 +374,12 @@
           </div>
         </div>
       </div>
-      <div class="logo-hop-tac-large">
+      <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
-      </div>
-      <div class="logo-hop-tac-small">
-        <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png" class="image-logo-footer" />
+        <img src="./images/giz.png" class="image-logo-footer" />
+        <img src="./images/ukaid.png" class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />

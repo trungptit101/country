@@ -14,10 +14,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function changeLanguage(language) {
+      localStorage.setItem("language", language);
+      window.location.reload();
+    }
+  </script>
 </head>
 
 <body>
   <div class="detail-country">
+    <div class="top-language">
+      <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
+      <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
+    </div>
     <div class="content">
       <div class="top-banner">
         <div class="top-banner__left">
@@ -140,9 +150,9 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Annual Harvesting Permit</p>
-                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Ensure the permit has a valid date and is signed by the Minister of Forestry
                   and Wildlife. Also check that shipments align with timber volumes and species permitted by law.</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -150,20 +160,20 @@
               <div class="content-collapse">
                 <p class="content-collapse-title">Decree granting a forest concession (for areas managed by the Forest
                   Management Unit [FMU])</p>
+                  <p style="font-size: 12px;">Ensure the decree has been signed and stamped by the Prime Minister, check
+                    that the name of the operator specified in the decree is the concession holder and ensure a valid
+                    concession contract is attached.</p>
                 <img src="./images/cameroon/3.jpg" style="width: 100%;" />
-                <p style="font-size: 12px;">Ensure the decree has been signed and stamped by the Prime Minister, check
-                  that the name of the operator specified in the decree is the concession holder and ensure a valid
-                  concession contract is attached.</p>
               </div>
             </div>
             <div class="collapse_scroll">
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Partnership Contract</p>
-                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">Ensure the contract has a valid date, has been signed and stamped by the
                   municipality representative, and includes a letter of approval signed and stamped by the Ministry of
                   Forestry and Wildlife.</p>
+                <img src="./images/cameroon/1.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -302,11 +312,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Export Registration</p>
-                <img src="./images/cameroon/2.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Check the document has been signed and stamped by the Ministry of Forestry
                   and Wildlife and has a valid date. Also ensure the shipment and document specifications are
                   consistent.
                 </p>
+                <img src="./images/cameroon/2.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -350,11 +360,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">CITES Permit</p>
-                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
                 <p style="font-size: 12px;">CITES permits are issued by the National CITES Management Authority of the
                   Ministry of Forestry and Wildlife. Check the signature and seal of the CITES Management Authority, the
                   name of the applicant / applicant's signature for the export permit, the name of the port of export.
                 </p>
+                <img src="./images/cameroon/5.jpg" style="width: 100%;" />
               </div>
             </div>
           </div>
@@ -372,11 +382,11 @@
               <div><img src="./images/icon-search-level-3.png" /></div>
               <div class="content-collapse">
                 <p class="content-collapse-title">Certificate of Registration</p>
-                <img src="./images/cameroon/4.png" style="width: 100%;" />
                 <p style="font-size: 12px;">Check that the document has a valid date and has been signed and stamped by
                   the Director for the Promotion and Transformation of Forest Products. Also ensure that details
                   included in the certificate are consistent with processing activities.
                 </p>
+                <img src="./images/cameroon/4.png" style="width: 100%;" />
               </div>
             </div>
             <div class="collapse_scroll">
@@ -451,10 +461,10 @@
       </div>
       <div class="logo-hop-tac">
         <img src="./images/lam-nghiep.png" />
-        <img src="./images/kiemlam.jpg" style="margin-left: 10px;" />
-        <img src="./images/hop-tac-duc.png" style="margin-left: 10px;" />
-        <img src="./images/giz.png" style="margin-left: 10px;" />
-        <img src="./images/ukaid.png" style="margin-left: 10px;" />
+        <img src="./images/kiemlam.jpg" class="image-logo-footer" />
+        <img src="./images/hop-tac-duc.png"  class="image-logo-footer" />
+        <img src="./images/giz.png"  class="image-logo-footer" />
+        <img src="./images/ukaid.png"  class="image-logo-footer" />
       </div>
     </div>
     <img src="./images/background.jpg" style="width: 100%;" />
