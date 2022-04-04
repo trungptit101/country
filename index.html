@@ -13,10 +13,29 @@
       height: calc(100vh - 400px);
     }
 
+    .logo-hop-tac {
+      /* display: flex; */
+      text-align: center;
+      justify-content: flex-start;
+      margin-top: 30px;
+    }
+
+    .logo-hop-tac>img {
+      width: 85px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo-hop-tac>img {
+        width: 50px !important;
+      }
+
+    }
+
+
     @media screen and (max-width: 940px) {
       #chartdiv {
         width: 100%;
-        height: calc(100vh - 200px) !important;
+        height: calc(100vh - 400px) !important;
       }
 
       .icon_legalog {
@@ -31,7 +50,7 @@
     }
 
     .carousel-inner {
-      max-height: 400px;
+      max-height: 200px;
     }
 
     .carousel-inner img {
@@ -66,15 +85,18 @@
 
     @media screen and (max-width: 940px) {
       .content-collapse-title {
+        text-align: center;
         width: 100%;
         background: #f49e1d;
-        border-radius: 10px;
         color: white;
-        font-weight: bold;
+        font-weight: 500;
         cursor: pointer;
-        font-size: 12px;
-        height: 70px;
-        line-height: 70px;
+        font-size: 14px;
+        padding: 5px 0;
+      }
+
+      .logo-footer {
+        width: 100%;
       }
     }
 
@@ -82,13 +104,22 @@
       .content-collapse-title {
         width: 100%;
         background: #f49e1d;
-        border-radius: 10px;
+        text-align: center;
         color: white;
-        font-weight: bold;
+        font-weight: 500;
         cursor: pointer;
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 5px 0;
       }
+
+      .logo-footer {
+        width: 350px;
+      }
+    }
+
+    .footer {
+      background: #168543;
+      width: 100%;
     }
   </style>
   <!-- Resources -->
@@ -106,90 +137,115 @@
       <img src="./images/en.png" onclick="changeLanguage('en')" class="logo-en" />
       <img src="./images/vi.png" onclick="changeLanguage('vn')" class="logo-vn" />
     </div>
-    <div style="display: flex;">
-      <div style="width: 30%; text-align: center; display: flex; justify-content: center; align-items: center;">
-        <img src="./images/icon.png" class="icon_legalog" />
+    <div id="slide-home" class="carousel slide" data-ride="carousel">
+      <div style="text-align: center; position: absolute; top: 10px; z-index: 2; width: 100%; color: white;">
+        <img src="./images/logo-legalog.png" />
+        <p style="font-size: 20px; font-weight: 500; margin-top: -40px;" id="implement-text-slide">Implementing Timber
+          Legality Assurance Systems
+        </p>
       </div>
-      <div id="slide-home" class="carousel slide" data-ride="carousel" style="width: 70%;">
-        <ul class="carousel-indicators">
-          <li data-target="#slide-home" data-slide-to="0" class="active"></li>
-          <li data-target="#slide-home" data-slide-to="1"></li>
-          <li data-target="#slide-home" data-slide-to="2"></li>
-          <li data-target="#slide-home" data-slide-to="3"></li>
-          <li data-target="#slide-home" data-slide-to="4"></li>
-          <li data-target="#slide-home" data-slide-to="5"></li>
-          <li data-target="#slide-home" data-slide-to="6"></li>
-          <li data-target="#slide-home" data-slide-to="7"></li>
-        </ul>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/slide1.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide2.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide3.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide4.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide5.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide6.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slide7.jpg" alt="Los Angeles" width="100%" height="500">
-          </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slide1.jpg" alt="Los Angeles" width="100%" height="500">
         </div>
-        <a class="carousel-control-prev" href="#slide-home" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#slide-home" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        <div class="carousel-item">
+          <img src="./images/slide2.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide3.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide4.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide5.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide6.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide7.jpg" alt="Los Angeles" width="100%" height="500">
+        </div>
       </div>
+      <a class="carousel-control-prev" href="#slide-home" data-slide="prev" style="z-index: 5;">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slide-home" data-slide="next" style="z-index: 5;">
+        <span class="carousel-control-next-icon"></span>
+      </a>
     </div>
+    <!-- </div> -->
     <div id="chartdiv"></div>
-    <div style="display: flex; padding: 0 10px; margin-top: 20px;">
-      <div style="width: 49%; text-align: center;">
-        <div data-toggle="collapse" data-target="#collapse_1">
-          <p class="content-collapse-title">Bản quyền</p>
+    <div class="footer">
+      <div class="row" style="margin-right: 0; margin-left: 0;">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          <div data-toggle="collapse" data-target="#collapse_1">
+            <p class="content-collapse-title">Bản quyền</p>
+          </div>
+          <div id="collapse_1" class="collapse">
+            <p style="font-size: 14px; text-align: justify; color: white;">Quyền sở hữu bản quyền cấp cho chủ sở hữu
+              quyền duy nhất để
+              sử dụng tác phẩm, với
+              một số trường hợp ngoại lệ. Khi một người tạo tác phẩm gốc, cố định trong một môi trường hữu hình, họ
+              nghiễm
+              nhiên sở hữu bản quyền đối với tác phẩm đó. Có, trong một số trường hợp, có thể sử dụng tác phẩm được bảo
+              vệ
+              bản quyền mà không vi phạm bản quyền của chủ sở hữu. Để biết thêm về điều này, bạn có thể muốn tìm hiểu về
+              sử dụng hợp pháp. Điều quan trọng cần lưu ý là nội dung của bạn có thể bị xóa theo khiếu nại vi phạm bản
+              quyền, ngay cả khi bạn...</p>
+          </div>
         </div>
-        <div id="collapse_1" class="collapse">
-          <p style="font-size: 14px; text-align: justify;">Quyền sở hữu bản quyền cấp cho chủ sở hữu quyền duy nhất để
-            sử dụng tác phẩm, với
-            một số trường hợp ngoại lệ. Khi một người tạo tác phẩm gốc, cố định trong một môi trường hữu hình, họ nghiễm
-            nhiên sở hữu bản quyền đối với tác phẩm đó. Có, trong một số trường hợp, có thể sử dụng tác phẩm được bảo vệ
-            bản quyền mà không vi phạm bản quyền của chủ sở hữu. Để biết thêm về điều này, bạn có thể muốn tìm hiểu về
-            sử dụng hợp pháp. Điều quan trọng cần lưu ý là nội dung của bạn có thể bị xóa theo khiếu nại vi phạm bản
-            quyền, ngay cả khi bạn...</p>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" style="margin-top: 20px; text-align: center;">
+          <img src="./images/logo-footer.png" class="logo-footer" />
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          <div data-toggle="collapse" data-target="#collapse_2">
+            <p class="content-collapse-title">Tuyên bố miễn trừ trách nhiệm</p>
+          </div>
+          <div id="collapse_2" class="collapse">
+            <p style="font-size: 14px; text-align: justify; color: white;">Những thông tin đăng tải trên trang web này
+              chỉ nhằm cung
+              cấp
+              hướng dẫn chung về
+              các vấn đề đang được quan tâm. Việc áp dụng và ảnh hưởng của các quy định pháp luật có thể khác nhau rất
+              lớn
+              trong những tình huống cụ thể liên quan. Do tính chất thay đổi của luật, quy tắc và quy định và những rủi
+              ro
+              tiềm ẩn qua hình thức truyền thông bằng điện tử nên những thông tin đăng trên trang web này có thể bị trì
+              hoãn, bỏ sót hoặc thiếu chính xác. Theo đó, xin hiểu rằng tác giả và bên xuất bản các thông tin trên trang
+              web này không nhằm mục đích cung cấp nội dung tư vấn hay dịch vụ liên quan đến vấn đề pháp lý, kế toán,
+              thuế
+              hoặc các tư vấn và dịch vụ chuyên môn khác. Do đó, quý vị không nên sử dụng những thông tin này thay cho
+              nội
+              dung tư vấn chuyên môn từ các chuyên gia tư vấn về kế toán, thuế, pháp lý hay các chuyên gia tư vấn chuyên
+              môn khác. Trước khi đưa ra quyết định hoặc thực hiện hành động nào, quý vị nên tham vấn chuyên viên của
+              PwC.
+            </p>
+          </div>
         </div>
       </div>
-      <div style="width: 49%; text-align: center; margin-left: 1%;">
-        <div data-toggle="collapse" data-target="#collapse_2">
-          <p class="content-collapse-title">Tuyên bố miễn trừ trách nhiệm</p>
+      <div class="row" style="margin-right: 0; margin-left: 0; align-items: center; color: white; margin-top: 15px;">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          <span>Published by the Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH</span>
         </div>
-        <div id="collapse_2" class="collapse">
-          <p style="font-size: 14px; text-align: justify;">Những thông tin đăng tải trên trang web này chỉ nhằm cung cấp
-            hướng dẫn chung về
-            các vấn đề đang được quan tâm. Việc áp dụng và ảnh hưởng của các quy định pháp luật có thể khác nhau rất lớn
-            trong những tình huống cụ thể liên quan. Do tính chất thay đổi của luật, quy tắc và quy định và những rủi ro
-            tiềm ẩn qua hình thức truyền thông bằng điện tử nên những thông tin đăng trên trang web này có thể bị trì
-            hoãn, bỏ sót hoặc thiếu chính xác. Theo đó, xin hiểu rằng tác giả và bên xuất bản các thông tin trên trang
-            web này không nhằm mục đích cung cấp nội dung tư vấn hay dịch vụ liên quan đến vấn đề pháp lý, kế toán, thuế
-            hoặc các tư vấn và dịch vụ chuyên môn khác. Do đó, quý vị không nên sử dụng những thông tin này thay cho nội
-            dung tư vấn chuyên môn từ các chuyên gia tư vấn về kế toán, thuế, pháp lý hay các chuyên gia tư vấn chuyên
-            môn khác. Trước khi đưa ra quyết định hoặc thực hiện hành động nào, quý vị nên tham vấn chuyên viên của PwC.
-          </p>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          <div>Contact for feedbacks:</div>
+          <div>Email to <a href="phu.nguy@giz.de" style="color: #0056b3;">phu.nguy@giz.de</a></div>
+          <div>Link to facebook GIZ Vietnam: <a href="https://www.facebook.com/GIZinVIETNAM"
+              style="color: #0056b3;">https://www.facebook.com/GIZinVIETNAM</a></div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          Developed by:
+          AITC Artificial Intelligence And Technology Development, Consulting Company Limited - aitc.tech.vn@gmail.com
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3 col-xl-3" style="margin-top: 20px;">
+          Scan here for iOS and Android app
+          <div>
+            <img src="./images/qr-code.png" style="width: 50px;" />
+            <img src="./images/qr-code.png" style="width: 50px;" />
+          </div>
         </div>
       </div>
-    </div>
-    <div style="text-align: center;">
-      <img src="./images/logo-legalog.png" />
-      <p style="font-size: 18px; font-weight: 500;">Thông tin liên hệ nhà phát triển</p>
     </div>
   </div>
 
@@ -199,6 +255,13 @@
   <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
   <script>
+    var languageStorage = localStorage.getItem("language");
+    var implementTextSlide = document.getElementById("implement-text-slide");
+    if (languageStorage) {
+      if (languageStorage == "vn")
+        implementTextSlide.innerHTML = "Thực thi các Hệ thống bảo đảm tính hợp pháp của gỗ";
+      else implementTextSlide.innerHTML = "Implementing Timber Legality Assurance Systems";
+    } else implementTextSlide.innerHTML = "Implementing Timber Legality Assurance Systems";
     function changeLanguage(language) {
       localStorage.setItem("language", language);
       window.location.reload();
